@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Brenstoffzellenheizung</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../images/favicon.png" type="image/png" />
+    <link rel="icon" href="../../images/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="../../css/form.css" />
+    <link rel="stylesheet" href="../../css/placeholders.css" />
+    <link rel="stylesheet" href="../../css/heizungsartenimueberblick.css" />
+    <!-- Für Microsoft Fluent UI Icon -->
+    <!-- Import von speziellen Schriftarten, welche Icons beihalten -->
+    <link
+      rel="stylesheet"
+      href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="error-DeviceWidth center">
+      <div>
+        Damit diese Seite korrekt dargestellt werden kann, ist ein Gerät mit
+        einer Mindesbreite von 500px erforderlich.<br />Fals Sie ein Mobiltelefon
+        nutzen sollten, versuchen Sie diese Website im Querformat anzusehen.
+      </div>
+    </div>
+    <!-- Menünavigation oberhalb -->
+    <div id="contentPlaceholderSuiteBar" class="navBar">
+      <div class="navLogo">
+        <a href="../../index.html"
+          ><i class="ms-Icon ms-Icon--Frigid" aria-hidden="true"></i
+        ></a>
+      </div>
+      <div class="navItem active">
+        Heizungsarten im Überblick
+        <div class="navItemDropdown flowDown">
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/waermepumpe.html"
+              >Wärmepumpe</a
+            >
+          </div>
+          <div class="navItem">
+            <a
+              href="../../sites/heizungsartenimueberblick/brenstoffzellenheizung.html"
+              >Brennstoffzellenheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/holzheizung.html"
+              >Holzheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/pelletheizung.html"
+              >Pelletheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/oelheizung.html"
+              >Ölheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/gasheizung.html"
+              >Gasheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a
+              href="../../sites/heizungsartenimueberblick/blockheizkraftwerk.html"
+              >Blockheizkraftwerk</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/elektroheizung.html"
+              >Elektroheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/solaranlage.html"
+              >Solartechnik</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="navItem">
+        <a
+          href="../../sites/Energieeffizienzklassen/Energieeffizienzklassen.html"
+          >Energieeffizienzklassen</a
+        >
+      </div>
+      <div class="navItem">
+        Dämmungen
+        <div class="navItemDropdown">
+          <div class="navItem">
+            <a href="../../sites/dämmungen/Außendämmung.html">Außendämmung</a>
+          </div>
+          <div class="navItem">
+            <a href="../../sites/dämmungen/innendämmung.html">Innendämmung</a>
+          </div>
+          <div class="navItem">
+            <a href="../../sites/dämmungen/kerndämmung.html">Kerndämmung</a>
+          </div>
+        </div>
+      </div>
+      <div class="navItem">
+        <a
+          href="../../sites/Tipps_zum_Umweltschonenden_Heizen/tippszumrichtigenheizen.html"
+          >Tipps beim Heizen</a
+        >
+      </div>
+      <div class="navItem">
+        <a href="../../sites/sources/sources.html">Quellen</a>
+      </div>
+
+      <div class="navAuthor">
+        <a href="../../sites/profiles/timo_woityschyn.html">Timo Woityschyn</a>
+        <div class="navItemDropdown">
+          <div class="navItem">
+            <a href="../../sites/profiles/all_authors.html">Alle Autoren</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="top" class="SuiteBarBlocker"></div>
+    <!-- Inhalt über dem eigentlichen Text geeignet für Überschriften... -->
+    <div id="contentPlaceholderTop" class="contentPlaceholderTop">
+      <div class="contentPlaceholderSetup">
+        <div class="contentPlaceholder15">
+          <div></div>
+        </div>
+        <div class="contentPlaceholder70 headLine">
+          <div>Brenstoffzellenheizung</div>
+        </div>
+        <div class="contentPlaceholder15"></div>
+      </div>
+    </div>
+    <!-- Inkalt in der Mitte -->
+    <div id="contentPlaceholderMiddle" class="contentPlaceholderSetup">
+      <div class="contentPlaceholder15 wrap">
+        <!-- Navigation auf einer Unterseite -->
+        <a href="#Funktionsweise">Funktionsweise</a>
+        <a href="#Kosten">Kosten</a>
+        <a href="#Vor-_und_Nachteile">Vor- und Nachteile</a>
+      </div>
+      <div class="contentPlaceholder65">
+        Die Brennstoffzelle ist ein Heizgerät, das nicht nur Warmwasser und Wärme
+        für Gebäude, sondern auch Strom zur Deckung des eigenen Bedarfs erzeugt.
+        Sie nutzt dafür die sogenannte Kraft-Wärme-Kopplung (KWK). Im Gegensatz
+        zu anderen KWK-Technologien wie BHKW oder Heizungen mit Stirling-Motor
+        funktioniert das aber nicht über die klassische Verbrennung, sondern über
+        einen chemischen Prozess, bei dem Wasserstoff mit Sauerstoff reagiert.
+      </div>
+      <div class="contentPlaceholder20"></div>
+    </div>
+
+    <div id="Funktionsweise" class="spacedDotts">
+      <hr />
+    </div>
+    <div class="contentPlaceholderSetup">
+      <div class="contentPlaceholder15">
+        <div>Funktionsweise</div>
+      </div>
+      <div class="contentPlaceholder35">
+        <!-- Wie oben beschrieben, handelt es sich bei der Brennstoffzellenheizung um ein System, das etwas anders funktioniert als der klassische Gas- oder Ölheizkessel. Denn in der Brennstoffzelle werden Wärme und Strom mittels der sogenannten kalten Verbrennung erzeugt. Dieser elektrochemische Prozess ist besonders effizient und, anders als die landläufige Meinung vermuten mag, bereits seit über 180 Jahren bekannt.  -->
+        Eine Brennstoffzelle produziert Strom, Wärme und Wasser über die bereits
+        angesprochene kalte Verbrennung. So nennt man den elektrochemischen
+        Prozess, bei dem Wasser- und Sauerstoff miteinander reagieren. Dafür
+        besteht eine Brennstoffzelle aus zwei Elektroden, die durch eine bedingt
+        durchlässige Membran voneinander getrennt sind. Gelangt nun Wasserstoff
+        auf die negativ geladene Anode, teilen sich durch einen Katalysator
+        Elektronen und Protonen. Wandern die freien Elektronen über den
+        elektrischen Leiter zur positiv geladenen Kathode, fließt Strom.
+      </div>
+      <div class="contentPlaceholder33">
+        <img
+          src="../../images/Grafik_Lexikon_Die-kalte-Verbrennung-in-einer-Brennstoffzelle.png"
+        />
+        <div class="pictureUrl floatFix wrap">
+          <a
+            title="https://cdn0.scrvt.com/fb8496fd305492cbfa1c87030c44a4e8/519a83d8a4287e62/f963ce24c75a/v/c4f3e0d940d9/Grafik_Lexikon_Die-kalte-Verbrennung-in-einer-Brennstoffzelle.png"
+            href="https://cdn0.scrvt.com/fb8496fd305492cbfa1c87030c44a4e8/519a83d8a4287e62/f963ce24c75a/v/c4f3e0d940d9/Grafik_Lexikon_Die-kalte-Verbrennung-in-einer-Brennstoffzelle.png"
+            >Source:
+            https://cdn0.scrvt.com/fb8496fd305492cbfa1c87030c44a4e8/519a83d8a4287e62/f963ce24c75a/v/c4f3e0d940d9/Grafik_Lexikon_Die-kalte-Verbrennung-in-einer-Brennstoffzelle.png</a
+          >
+        </div>
+      </div>
+      <div class="contentPlaceholder20"></div>
+    </div>
+
+    <div id="Kosten" class="spacedDotts">
+      <hr />
+    </div>
+    <div class="contentPlaceholderSetup">
+      <div class="contentPlaceholder15">
+        <div>Kosten</div>
+      </div>
+      <div class="contentPlaceholder65">
+        <div>
+          Wie bei allen Heizgeräten setzen sich auch die Kosten einer
+          Brennstoffzellen-Heizung aus verschiedenen Komponenten zusammen. Diese
+          sind:
+          <ul>
+            <li>die Kosten für die Erschließung des Brennstoffs</li>
+            <li>die Kosten für die Anschaffung der Technik</li>
+            <li>die Kosten im Verbrauch der Brennstoffzelle</li>
+            <li>die Kosten für den Gasanschluss</li>
+          </ul>
+          <hr />
+          Da der Wasserstoff zum Betrieb der Brennstoffzellenheizung aus dem im
+          Erdgas gespeicherten Methan gewonnen wird, ist ein Gasanschluss
+          Voraussetzung für eine Brennstoffzelle. Dieser besteht aus zwei Teilen:
+          <ol>
+            <li>
+              Der Hausanschlussleitung (zwischen Straße und Gebäude) ist vom
+              Versorger zu erstellen. Die Kosten dafür betragen etwa 1.500 bis
+              3.000 Euro. Sie können höher ausfallen, wenn die Entfernung zur
+              öffentlichen Gasleitung groß ist.
+            </li>
+            <li>
+              Die Leitungen im Gebäude selbst. Diese transportieren das Gas von
+              der Hauptabsperreinrichtung zu allen Verbrauchern. Soll nur die
+              Brennstoffzellen-Heizung angebunden werden, können Sie dabei mit
+              etwa 1.000 bis 1.500 Euro rechnen. Ist kein Gasanschluss vorhanden,
+              kann die Brennstoffzelle auch mit Flüssiggas betrieben werden. Um
+              dieses im eigenen Haus zu speichern, ist eine Tankanlage nötig.
+              Diese wird meist im Garten aufgestellt und verursacht Kosten von
+              etwa 1.500 bis 3.000 Euro. Es sei an dieser Stelle erwähnt, dass
+              die meisten auf dem Markt verfügbaren Modelle jedoch für das
+              klassische Erdgas ausgelegt sind.
+            </li>
+          </ol>
+          <hr />
+          <div class="contentPlaceholderSetup">
+            <div class="contentPlaceholder15">
+              Kosten für die Brennstoffzelle selbst
+            </div>
+            <div class="contentPlaceholder85">
+              Stromerzeugende Heizungen sind eine junge und komplexe Technologie.
+              Für eine Brennstoffzellenheizung im Einfamilienhaus können dabei
+              Kosten von 20.000 bis 25.000 Euro anfallen. Die Preise für eine
+              Brennstoffzellenheizung variieren jedoch stark nach Region,
+              Hersteller sowie Dienstleister. Aufgrund dessen sind die
+              angegebenen Kosten nur grobe Richtwerte und dienen der
+              Orientierung.
+            </div>
+          </div>
+          <hr />
+          <div class="contentPlaceholderSetup">
+            <div class="contentPlaceholder15">
+              Betriebskosten einer Brennstoffzelle
+            </div>
+            <div class="contentPlaceholder85">
+              Die Kosten, die in Betrieb einer Brennstoffzelle entstehen, setzen
+              sich aus Brennstoffkosten, Vergütungen und Einsparungen zusammen.
+              Die größten Einsparungen erzielen Anlagenbesitzer dabei, wenn sie
+              möglichst viel des erzeugten Stroms auch selbst verbrauchen. Denn
+              dann muss keine Energie aus dem öffentlichen Netz bezogen werden.
+              Im Vergleich zur Einspeisevergütung des KWK-Gesetzes, die aktuell
+              etwa zehn bis zwölf Cent je Kilowattstunde beträgt (zusammengesetzt
+              aus KWK-Zuschlag, Börsen-Strompreis und Vergütung für die
+              vermiedene Netznutzung), liegt der Wert des selbst genutzten Stroms
+              heute bei etwa 28 Cent - dem Strompreis.
+            </div>
+          </div>
+          <hr />
+          Wie hoch die Kosten in Betrieb ausfallen, hängt jedoch von
+          verschiedenen Faktoren ab. Dabei spielen sehr unterschiedliche Faktoren
+          eine Rolle:
+          <ul>
+            <li>energetischer Zustand des Gebäudes</li>
+            <li>Heizverhalten</li>
+            <li>Menge des selbst genutzten Stroms</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="Vor-_und_Nachteile" class="spacedDotts">
+      <hr />
+    </div>
+    <div class="contentPlaceholderSetup">
+      <div class="contentPlaceholder15">
+        <div>Vor- und Nachteile</div>
+      </div>
+      <div class="contentPlaceholder65">
+        <div>
+          <div class="contentPlaceholder20">
+            <table class="pro_con">
+              <thead class="center">
+                <tr>
+                  <td>Vorteile</td>
+                  <td>Nachteile</td>
+                </tr>
+              </thead>
+              <tbody class="center">
+                <tr>
+                  <td>Strom- und Wärmeerzeugung mit hohem Wirkungsgrad</td>
+                  <td>abhängig vom Gas & dessen Preisentwicklung</td>
+                </tr>
+                <tr>
+                  <td>
+                    Wirtschaftlicher Betrieb (auch bei niedrigem Wärmebedarf)
+                  </td>
+                  <td>Vergleichsweise hohe Anschaffungskosten</td>
+                </tr>
+                <tr>
+                  <td>Kompakte Anlagentechnik ohne Lärm</td>
+                  <td>Regelmäßige Wartungsarbeiten an der Heizung</td>
+                </tr>
+                <tr>
+                  <td>geringere Energiekosten</td>
+                  <td>in der Regel nicht für den Altbau geeignet</td>
+                </tr>
+                <tr>
+                  <td>
+                    Steigerung der Unabhängigkeit von Strompreisentwicklung
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Hohe staatliche Förderungen</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Klimaschonende Wirkung und Senkung von CO2</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="contentPlaceholder20"></div>
+    </div>
+    <div class="contentPlaceholderSetup">
+      <div class="contentPlaceholder100">
+        <div class="sourceElement">
+          <a target="_tab" href="https://heizung.de/brennstoffzellenheizung/"
+            >https://heizung.de/brennstoffzellenheizung/</a
+          >
+        </div>
+      </div>
+    </div>
+    <div id="contentPlaceholderBottom" class="contentPlaceholderBottom">
+      <div class="contentPlaceholderSetup center noStyle">
+        <div class="contentPlaceholder33">
+          <div>
+            <a href="waermepumpe.html"
+              ><i class="ms-Icon ms-Icon--ChevronLeftMed" aria-hidden="true"></i>
+              Zurück
+            </a>
+          </div>
+        </div>
+        <div class="contentPlaceholder33">
+          <div>
+            <a href="#top"
+              ><i class="ms-Icon ms-Icon--ChevronUpMed" aria-hidden="true"></i>
+              Nach oben
+              <i class="ms-Icon ms-Icon--ChevronUpMed" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+        <div class="contentPlaceholder33">
+          <div>
+            <a href="holzheizung.html">
+              Weiter
+              <i class="ms-Icon ms-Icon--ChevronRightMed" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fußzeile -->
+    <div id="contentPlaceholderFooter" class="contentPlaceholderFooter">
+      <div class="noWrap">
+        <i class="ms-Icon ms-Icon--Frigid" aria-hidden="true"></i>
+      </div>
+      <div class="">Umweltschutz beim Heizen</div>
+      <div class="noWrap">2020</div>
+    </div>
+  </body>
+</html>

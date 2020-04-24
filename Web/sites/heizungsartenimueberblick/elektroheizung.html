@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Elektroheizung</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../images/favicon.png" type="image/png" />
+    <link rel="icon" href="../../images/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="../../css/form.css" />
+    <link rel="stylesheet" href="../../css/placeholders.css" />
+    <link rel="stylesheet" href="../../css/heizungsartenimueberblick.css" />
+    <!-- Für Microsoft Fluent UI Icon -->
+    <!-- Import von speziellen Schriftarten, welche Icons beihalten -->
+    <link
+      rel="stylesheet"
+      href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="error-DeviceWidth center">
+      <div>
+        Damit diese Seite korrekt dargestellt werden kann, ist ein Gerät mit
+        einer Mindesbreite von 500px erforderlich.<br />Fals Sie ein Mobiltelefon
+        nutzen sollten, versuchen Sie diese Website im Querformat anzusehen.
+      </div>
+    </div>
+    <!-- Menünavigation oberhalb -->
+    <div id="contentPlaceholderSuiteBar" class="navBar">
+      <div class="navLogo">
+        <a href="../../index.html"
+          ><i class="ms-Icon ms-Icon--Frigid" aria-hidden="true"></i
+        ></a>
+      </div>
+      <div class="navItem active">
+        Heizungsarten im Überblick
+        <div class="navItemDropdown flowDown">
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/waermepumpe.html"
+              >Wärmepumpe</a
+            >
+          </div>
+          <div class="navItem">
+            <a
+              href="../../sites/heizungsartenimueberblick/brenstoffzellenheizung.html"
+              >Brennstoffzellenheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/holzheizung.html"
+              >Holzheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/pelletheizung.html"
+              >Pelletheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/oelheizung.html"
+              >Ölheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/gasheizung.html"
+              >Gasheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a
+              href="../../sites/heizungsartenimueberblick/blockheizkraftwerk.html"
+              >Blockheizkraftwerk</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/elektroheizung.html"
+              >Elektroheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/solaranlage.html"
+              >Solartechnik</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="navItem">
+        <a
+          href="../../sites/Energieeffizienzklassen/Energieeffizienzklassen.html"
+          >Energieeffizienzklassen</a
+        >
+      </div>
+      <div class="navItem">
+        Dämmungen
+        <div class="navItemDropdown">
+          <div class="navItem">
+            <a href="../../sites/dämmungen/Außendämmung.html">Außendämmung</a>
+          </div>
+          <div class="navItem">
+            <a href="../../sites/dämmungen/innendämmung.html">Innendämmung</a>
+          </div>
+          <div class="navItem">
+            <a href="../../sites/dämmungen/kerndämmung.html">Kerndämmung</a>
+          </div>
+        </div>
+      </div>
+      <div class="navItem">
+        <a
+          href="../../sites/Tipps_zum_Umweltschonenden_Heizen/tippszumrichtigenheizen.html"
+          >Tipps beim Heizen</a
+        >
+      </div>
+      <div class="navItem">
+        <a href="../../sites/sources/sources.html">Quellen</a>
+      </div>
+
+      <div class="navAuthor">
+        <a href="../../sites/profiles/timo_woityschyn.html">Timo Woityschyn</a>
+        <div class="navItemDropdown">
+          <div class="navItem">
+            <a href="../../sites/profiles/all_authors.html">Alle Autoren</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="top" class="SuiteBarBlocker"></div>
+    <!-- Inhalt über dem eigentlichen Text geeignet für Überschriften... -->
+    <div id="contentPlaceholderTop" class="contentPlaceholderTop">
+      <div class="contentPlaceholderSetup">
+        <div class="contentPlaceholder15">
+          <div></div>
+        </div>
+        <div class="contentPlaceholder70 headLine">
+          <div>Elektroheizung</div>
+        </div>
+        <div class="contentPlaceholder15"></div>
+      </div>
+    </div>
+    <!-- Inkalt in der Mitte -->
+    <div id="contentPlaceholderMiddle" class="contentPlaceholderSetup">
+      <div class="contentPlaceholder15 wrap">
+        <!-- Navigation auf einer Unterseite -->
+        <a href="#Funktionsweise">Funktionsweise</a>
+        <a href="#Arten">Arten</a>
+        <a href="#Nachtspeicherheizung">Nachtspeicherheizung</a>
+        <a href="#Kosten">Kosten</a>
+        <a href="#Vor-_und_Nachteile">Vor- und Nachteile</a>
+      </div>
+      <div class="contentPlaceholder65">
+        Eine Elektroheizung, auch elektrische Heizung, Elektro Heizung oder
+        E-Heizung genannt, ist ein System, das für die Beheizung von Räumen oder
+        mit einem Durchlauferhitzer für die Erwärmung von Trinkwasser eingesetzt
+        werden kann. Im Gegensatz zu einer Warmwasserheizung funktioniert das
+        komplett ohne Heizkessel oder aufwendig zu verlegende Rohrleitungen. Denn
+        die Wärme wird nicht zentral, sondern dezentral in den einzelnen Geräten
+        selbst erzeugt.
+        <br /><br />
+      </div>
+    </div>
+    <div id="Funktionsweise" class="spacedDotts">
+      <hr />
+    </div>
+    <div class="contentPlaceholderSetup">
+      <div class="contentPlaceholder15">
+        Funktionsweise
+      </div>
+      <div class="contentPlaceholder65">
+        <div>
+          So ähnlich wie bei einem Tauchsieder erhitzt in der Elektroheizung ein
+          elektrisch leitendes Material, wenn es von Strom durchflossen wird. Die
+          dabei entstehende Wärme kann dann entweder direkt in den Raum
+          abgegeben, an ein Speichermedium übertragen oder zur
+          Warmwasserbereitung genutzt werden.
+        </div>
+      </div>
+      <div class="contentPlaceholder20"></div>
+    </div>
+
+    <div id="Arten" class="spacedDotts">
+      <hr />
+    </div>
+    <div class="contentPlaceholderSetup">
+      <div class="contentPlaceholder15">
+        <div>Arten</div>
+      </div>
+      <div class="contentPlaceholder45">
+        <div>
+          Entscheiden sich Hausbesitzer dafür, elektrisch zu heizen, stehen ihnen
+          heute unterschiedliche Systeme zur Auswahl.
+          <br />
+          Diese sind:
+          <ul>
+            <li>Elektrodirektheizung</li>
+            <li>Nachtspeicherheizung</li>
+            <li>elektrische Fußbodenheizung</li>
+            <li>elektrische Warmwasserbereitung</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="contentPlaceholder20">
+        <img
+          class="shadow"
+          src="https://www.heizsparer.de/wp-content/uploads/images/elektroheizung-konvektor-new-africa-adobestock.jpg"
+        />
+        <div class="pictureUrl floatFix wrap">
+          <a
+            title="https://www.heizsparer.de/wp-content/uploads/images/elektroheizung-konvektor-new-africa-adobestock.jpg"
+            href="https://www.heizsparer.de/wp-content/uploads/images/elektroheizung-konvektor-new-africa-adobestock.jpg"
+            >Source:
+            https://www.heizsparer.de/wp-content/uploads/images/elektroheizung-konvektor-new-africa-adobestock.jpg</a
+          >
+        </div>
+      </div>
+      <div class="contentPlaceholder20"></div>
+    </div>
+    <div id="Nachtspeicherheizung" class="spacedDotts">
+      <hr />
+    </div>
+    <div class="contentPlaceholderSetup">
+      <div class="contentPlaceholder15">
+        <div>Nachtspeicherheizung</div>
+      </div>
+      <div class="contentPlaceholder65">
+        <div>
+          Auch eine Nacht- oder Elektrospeicherheizung erzeugt Wärme, indem ein
+          elektrischer Leiter von Strom durchflossen wird. Im Gegensatz zu
+          Direktheizungen geht die Energie in diesen Elektroheizungen aber nicht
+          direkt an den Raum, sondern erst einmal in einen integrierten Speicher.
+          Dieser kann zum Beispiel mit günstigerem Nachtstrom aufgeladen werden
+          und die Wärme zeitversetzt am darauffolgenden Tag abgeben. Wichtig zu
+          wissen ist, dass heute nicht alle Energieversorger die günstigeren
+          Nachtstromtarife anbieten und dass man einen zusätzlichen und
+          gebührenpflichtigen Stromzähler braucht, der dies erfasst. Moderne
+          Nachtspeicherheizungen können wie Heizkörper stehend oder hängend an
+          der Wand montiert werden und geben einen Großteil der Wärme über
+          Konvektion, also direkt an die Luft, ab.
+        </div>
+        <br /><br />
+        <table class="pro_con">
+          <thead class="center">
+            <tr>
+              <td>Vorteile einer Nachtspeicherheizung</td>
+              <td>Nachteile einer Nachtspeicherheizung</td>
+            </tr>
+          </thead>
+          <tbody class="center">
+            <tr>
+              <td>
+                Elektroheizungen mit Nachtspeicher sind im Vergleich zu einer
+                zentralen Heizungsanlage günstiger in der Anschaffung
+              </td>
+              <td>
+                Heizen mit Strom verursacht hohe Kosten, die deutlich über denen
+                von Öl oder Gas liegen
+              </td>
+            </tr>
+            <tr>
+              <td>Heizgeräte können einfach aufgestellt werden</td>
+              <td>
+                Um günstigeren Nachstrom nutzen zu können, wird ein spezieller
+                Zähler benötigt
+              </td>
+            </tr>
+            <tr>
+              <td>nur ein Stromanschluss muss vorhanden sein</td>
+              <td>
+                Politisch wird ein Verbot von Nachtspeicherheizungen diskutiert
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                Schlechte CO2-Gesamtbilanz, wenn sie nicht mit Ökostrom betrieben
+                werden
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="contentPlaceholder20"></div>
+    </div>
+    <div id="Kosten" class="spacedDotts">
+      <hr />
+    </div>
+    <div class="contentPlaceholderSetup">
+      <div class="contentPlaceholder15">
+        <div>Kosten</div>
+      </div>
+      <div class="contentPlaceholder65">
+        <div>
+          Auch wenn die einzelne Elektroheizung viele Vorteile hat, wird sie
+          dennoch mit Strom betrieben. Mit jeder Kilowattstunde Wärme entstehen
+          so Kosten von rund 28 Cent. Vergleicht man das mit der zentralen
+          Energieerzeugung, kann eine Gasheizung die Wärme für Heizung und
+          Warmwasser überschlagen für etwa sechs bis sieben Cent je
+          Kilowattstunde bereitstellen. Auch wenn die Kosten durch Wärmeverluste
+          der Anlage noch etwas steigen, ist das deutlich günstiger als das
+          Heizen mit Strom.
+
+          <br /><br />
+
+          Als Zusatzheizung optimal geeignet Trotz dessen kann sich auch die
+          elektrische Heizung lohnen. Und zwar immer dann, wenn sie in zeitweise
+          beheizten oder selten genutzten Gebäuden installiert wird. Ein Beispiel
+          dafür sind Gartenhäuser. Denn hier liegen die Kosten für eine zentrale
+          Anlage zur Wärmeerzeugung deutlich über den Ausgaben, die eine
+          Elektroheizung verursacht. Oder wenn das Haus so stark gedämmt ist,
+          dass der Wärmebedarf extrem niedrig ist. Darüber hinaus kann eine
+          Elektroheizung ihre Vorteile auch als Zusatzheizung voll ausspielen.
+          <b>
+            Nicht zuletzt belegt die Elektroheizung bei der Frage: "Welche
+            Heizung ist am günstigsten?", den ersten Platz - zumindest in der
+            Anschaffung.
+          </b>
+        </div>
+      </div>
+    </div>
+    <div id="Vor-_und_Nachteile" class="spacedDotts">
+      <hr />
+    </div>
+    <div class="contentPlaceholderSetup">
+      <div class="contentPlaceholder15">
+        <div>Vor- und Nachteile</div>
+      </div>
+      <div class="contentPlaceholder65">
+        <div>
+          <div class="contentPlaceholder20">
+            <table class="pro_con">
+              <thead class="center">
+                <tr>
+                  <td>Vorteile</td>
+                  <td>Nachteile</td>
+                </tr>
+              </thead>
+              <tbody class="center">
+                <tr>
+                  <td>
+                    die Elektroheizung kann ohne großen Aufwand aufgestellt
+                    werden
+                  </td>
+                  <td>
+                    Elektroheizungen verursachen hohe Kosten, wenn sie dauerhaft
+                    betrieben werden
+                  </td>
+                </tr>
+                <tr>
+                  <td>ein Steckdosenanschluss ist meist ausreichend</td>
+                  <td>höherer Aufwand durch genehmigungspflichtige Nutzung</td>
+                </tr>
+                <tr>
+                  <td>
+                    elektrisch heizen ist oft mit günstigen Anschaffungskosten
+                    verbunden
+                  </td>
+                  <td>
+                    haben eine schlechte CO2-Gesamtbilanz, wenn sie nicht mit
+                    Ökostrom betrieben werden
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="contentPlaceholder20"></div>
+    </div>
+    <div class="contentPlaceholderSetup">
+      <div class="contentPlaceholder100">
+        <div class="sourceElement">
+          <a target="_tab" href="https://heizung.de/elektroheizung/"
+            >https://heizung.de/elektroheizung/</a
+          >
+        </div>
+      </div>
+    </div>
+    <div id="contentPlaceholderBottom" class="contentPlaceholderBottom">
+      <div class="contentPlaceholderSetup center noStyle">
+        <div class="contentPlaceholder33">
+          <div>
+            <a href="blockheizkraftwerk.html"
+              ><i class="ms-Icon ms-Icon--ChevronLeftMed" aria-hidden="true"></i>
+              Zurück
+            </a>
+          </div>
+        </div>
+        <div class="contentPlaceholder33">
+          <div>
+            <a href="#top"
+              ><i class="ms-Icon ms-Icon--ChevronUpMed" aria-hidden="true"></i>
+              Nach oben
+              <i class="ms-Icon ms-Icon--ChevronUpMed" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+        <div class="contentPlaceholder33">
+          <div>
+            <a href="solaranlage.html">
+              Weiter
+              <i class="ms-Icon ms-Icon--ChevronRightMed" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fußzeile -->
+    <div id="contentPlaceholderFooter" class="contentPlaceholderFooter">
+      <div class="noWrap">
+        <i class="ms-Icon ms-Icon--Frigid" aria-hidden="true"></i>
+      </div>
+      <div class="">Umweltschutz beim Heizen</div>
+      <div class="noWrap">2020</div>
+    </div>
+  </body>
+</html>

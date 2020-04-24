@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gasheizung</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../images/favicon.png" type="image/png" />
+    <link rel="icon" href="../../images/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="../../css/form.css" />
+    <link rel="stylesheet" href="../../css/placeholders.css" />
+    <link rel="stylesheet" href="../../css/heizungsartenimueberblick.css" />
+    <!-- Für Microsoft Fluent UI Icon -->
+    <!-- Import von speziellen Schriftarten, welche Icons beihalten -->
+    <link
+      rel="stylesheet"
+      href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="error-DeviceWidth center">
+      <div>
+        Damit diese Seite korrekt dargestellt werden kann, ist ein Gerät mit
+        einer Mindesbreite von 500px erforderlich.<br />Fals Sie ein Mobiltelefon
+        nutzen sollten, versuchen Sie diese Website im Querformat anzusehen.
+      </div>
+    </div>
+    <!-- Menünavigation oberhalb -->
+    <div id="contentPlaceholderSuiteBar" class="navBar">
+      <div class="navLogo">
+        <a href="../../index.html"
+          ><i class="ms-Icon ms-Icon--Frigid" aria-hidden="true"></i
+        ></a>
+      </div>
+      <div class="navItem active">
+        Heizungsarten im Überblick
+        <div class="navItemDropdown flowDown">
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/waermepumpe.html"
+              >Wärmepumpe</a
+            >
+          </div>
+          <div class="navItem">
+            <a
+              href="../../sites/heizungsartenimueberblick/brenstoffzellenheizung.html"
+              >Brennstoffzellenheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/holzheizung.html"
+              >Holzheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/pelletheizung.html"
+              >Pelletheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/oelheizung.html"
+              >Ölheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/gasheizung.html"
+              >Gasheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a
+              href="../../sites/heizungsartenimueberblick/blockheizkraftwerk.html"
+              >Blockheizkraftwerk</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/elektroheizung.html"
+              >Elektroheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/solaranlage.html"
+              >Solartechnik</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="navItem">
+        <a
+          href="../../sites/Energieeffizienzklassen/Energieeffizienzklassen.html"
+          >Energieeffizienzklassen</a
+        >
+      </div>
+      <div class="navItem">
+        Dämmungen
+        <div class="navItemDropdown">
+          <div class="navItem">
+            <a href="../../sites/dämmungen/Außendämmung.html">Außendämmung</a>
+          </div>
+          <div class="navItem">
+            <a href="../../sites/dämmungen/innendämmung.html">Innendämmung</a>
+          </div>
+          <div class="navItem">
+            <a href="../../sites/dämmungen/kerndämmung.html">Kerndämmung</a>
+          </div>
+        </div>
+      </div>
+      <div class="navItem">
+        <a
+          href="../../sites/Tipps_zum_Umweltschonenden_Heizen/tippszumrichtigenheizen.html"
+          >Tipps beim Heizen</a
+        >
+      </div>
+      <div class="navItem">
+        <a href="../../sites/sources/sources.html">Quellen</a>
+      </div>
+
+      <div class="navAuthor">
+        <a href="../../sites/profiles/timo_woityschyn.html">Timo Woityschyn</a>
+        <div class="navItemDropdown">
+          <div class="navItem">
+            <a href="../../sites/profiles/all_authors.html">Alle Autoren</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="top" class="SuiteBarBlocker"></div>
+    <!-- Inhalt über dem eigentlichen Text geeignet für Überschriften... -->
+    <div id="contentPlaceholderTop" class="contentPlaceholderTop">
+      <div class="contentPlaceholderSetup">
+        <div class="contentPlaceholder15">
+          <div></div>
+        </div>
+        <div class="contentPlaceholder70 headLine">
+          <div>Gasheizung</div>
+        </div>
+        <div class="contentPlaceholder15"></div>
+      </div>
+    </div>
+    <!-- Inkalt in der Mitte -->
+    <div id="contentPlaceholderMiddle" class="contentPlaceholderSetup">
+      <div class="contentPlaceholder15 wrap">
+        <!-- Navigation auf einer Unterseite -->
+        <a href="#Arten">Arten</a>
+        <a href="#Brennstoffe">Brennstoffe</a>
+        <a href="#Kosten">Kosten</a>
+        <a href="#Vor-_und_Nachteile">Vor- und Nachteile</a>
+      </div>
+      <div class="contentPlaceholder65">
+        Eine Gasheizung erzeugt Wärme für Heizung und Warmwasser durch die
+        Verbrennung von Gas. Während die grundlegende Technologie bereits seit
+        200 Jahren im Einsatz ist, wurde sie im Laufe der Zeit ständig
+        weiterentwickelt. Mit der Nutzung des Brennwerteffekts erreichen moderne
+        Gasheizungen heute Wirkungsgrade von bis zu 98 Prozent. Das heißt, sie
+        machen nahezu die ganze im Brennstoff gespeicherte Energie für die
+        Beheizung von Gebäuden und Warmwasser nutzbar.
+      </div>
+    </div>
+    <div id="Arten" class="spacedDotts">
+      <hr />
+    </div>
+    <div class="contentPlaceholderSetup">
+      <div class="contentPlaceholder15">
+        <div>Arten</div>
+      </div>
+      <div class="contentPlaceholder65">
+        <div>
+          Während es Gasheizungen früher nur in einer Funktionsart gab, sind die
+          effizienten Heizgeräte heute in verschiedenen Ausführungen zu haben.
+          <br />
+          Diese sind:
+          <ul>
+            <li>die Gas-Brennwertheizung</li>
+            <li>die Gasheizung mit Solarthermie</li>
+            <li>das Gas-Adsorptions-Heizgerät</li>
+          </ul>
+        </div>
+      </div>
+      <div class="contentPlaceholder20"></div>
+    </div>
+
+    <div id="Brennstoffe" class="spacedDotts">
+      <hr />
+    </div>
+    <div class="contentPlaceholderSetup">
+      <div class="contentPlaceholder15">
+        <div>Brennstoffe</div>
+      </div>
+      <div class="contentPlaceholder35">
+        Gasheizungen werden generell mit dem Brennstoff Gas betrieben. Wichtig
+        für die Leistung der Geräte ist dabei aber vor allem dessen Herkunft und
+        Zusammensetzung.
+        <br />
+        Unterscheiden lassen sich dabei folgende drei Brennstoff-Arten:
+        <ol>
+          <li>Erdgas</li>
+          <li>Bio-Gas</li>
+          <li>Flüssiggas</li>
+        </ol>
+      </div>
+      <div class="contentPlaceholder30">
+        <img
+          class="shadow"
+          src="https://i.computer-bild.de/downloads/9598771/05.jpg"
+        />
+        <div class="pictureUrl floatFix wrap">
+          <a
+            title="https://i.computer-bild.de/downloads/9598771/05.jpg"
+            href="https://i.computer-bild.de/downloads/9598771/05.jpg"
+            >Source: https://i.computer-bild.de/downloads/9598771/05.jpg</a
+          >
+        </div>
+      </div>
+      <div class="contentPlaceholder20"></div>
+    </div>
+
+    <div id="Kosten" class="spacedDotts">
+      <hr />
+    </div>
+    <div class="contentPlaceholderSetup">
+      <div class="contentPlaceholder15">
+        <div>Kosten</div>
+      </div>
+      <div class="contentPlaceholder65">
+        Die Kosten für eine Gasheizung umfassen jedoch nicht nur den Kessel
+        selbst, sondern auch den Gasanschluss, wenn dieser noch nicht vorhanden
+        ist, sowie die Betriebskosten.
+
+        <hr />
+        <div class="contentPlaceholderSetup">
+          <div class="contentPlaceholder15">
+            Die Kosten für den Gasanschluss
+          </div>
+          <div class="contentPlaceholder85">
+            Ein Gasanschluss setzt sich in der Regel aus einem Hausanschluss und
+            der Anbindeleitung im Gebäude zusammen. Der Hausanschluss besteht aus
+            allen Leitungen und Armaturen zwischen Hauptversorgungsleitung in der
+            Straße und Hauptabsperreinrichtung im Haus. Die Kosten dafür werden
+            vom Versorger vorgegeben und betragen für ein typisches
+            Einfamilienhaus etwa 1.500 bis 2.500 Euro. Muss zwischen Straße und
+            Haus eine weite Entfernung überwunden werden, können die Kosten höher
+            ausfallen. Die Anbindeleitung beinhaltet alle Rohre und Armaturen im
+            Gebäude, die bis zum letzten Verbraucher - zum Beispiel der
+            Gasheizung - benötigt werden. In einem typischen Einfamilienhaus
+            entstehen dabei noch einmal Kosten von etwa 1.000 bis 1.500 Euro.
+            Soll die Gasheizung mit Flüssiggas betrieben werden, ist eine
+            zusätzliche Tankanlage nötig. Diese wird in der Regel im Garten
+            aufgestellt und verursacht Kosten von rund 2.000 bis 3.000 Euro.
+          </div>
+        </div>
+        <hr />
+        <div class="contentPlaceholderSetup">
+          <div class="contentPlaceholder15">
+            Die Kosten für die Gasheizung
+          </div>
+          <div class="contentPlaceholder85">
+            Die Kosten für die Gasheizung unterscheiden sich, je nachdem, welche
+            Art der Heizung installiert werden soll. Während eine konventionelle
+            Brennwerttechnik-Gasheizung für ein Einfamilienhaus rund 5.000 bis
+            6.000 Euro kostet, müssen für eine Solaranlage zur
+            Warmwasserbereitung noch einmal rund 4.000 bis 5.000 Euro extra
+            eingeplant werden. Entscheiden sich Bauherren oder Hausbesitzer für
+            eine Zeolith-Gasheizung, entstehen zusätzlich zum Gerätepreis von
+            rund 13.000 bis 14.000 Euro auch Kosten für die Gewinnung der
+            Umweltwärme. Soll dafür das Erdreich angezapft werden, müssen
+            Hausbesitzer bei einer Tiefenbohrung mit etwa 60 bis 80 Euro pro
+            Meter und bei einem Flachkollektor mit zehn bis 20 Euro pro
+            Quadratmeter rechnen. Die Preise für eine Gasheizung variieren jedoch
+            stark nach Region, Hersteller und Dienstleister und stellen damit nur
+            eine grobe Kosteneinschätzung dar.
+          </div>
+        </div>
+        <hr />
+        <div class="contentPlaceholderSetup">
+          <div class="contentPlaceholder15">
+            Die Kosten im Verbrauch einer Gasheizung
+          </div>
+          <div class="contentPlaceholder85">
+            Die Kosten für Heizgas, die im Betrieb einer Gasheizung entstehen,
+            richten sich generell nach der Art der Heizung, der energetischen
+            Qualität des jeweiligen Gebäudes und dem Nutzerverhalten der
+            Bewohner. Da sich beide Faktoren von Haus zu Haus unterscheiden
+            können, müssen die zu erwartenden Verbrauchskosten einer Gasheizung
+            für jeden Fall einzeln ermittelt werden. Wer Heizkosten sparen
+            möchte, sollte am besten die Entwicklung der Gaspreise im Blick
+            behalten und bei Bedarf den Anbieter wechseln.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="Vor-_und_Nachteile" class="spacedDotts">
+      <hr />
+    </div>
+    <div class="contentPlaceholderSetup">
+      <div class="contentPlaceholder15">
+        <div>Vor- und Nachteile</div>
+      </div>
+      <div class="contentPlaceholder65">
+        <div>
+          <div class="contentPlaceholder20">
+            <table class="pro_con">
+              <thead class="center">
+                <tr>
+                  <td>Vorteile</td>
+                  <td>Nachteile</td>
+                </tr>
+              </thead>
+              <tbody class="center">
+                <tr>
+                  <td>
+                    geringere Anschaffungskosten im Vergleich zu anderen
+                    Heizsystemen
+                  </td>
+                  <td>Abhängigkeit von fossilen Rohstoffen</td>
+                </tr>
+                <tr>
+                  <td>platzsparende Bauweise</td>
+                  <td>Gasanschluss oder Flüssiggas-Tank wird benötigt</td>
+                </tr>
+                <tr>
+                  <td>
+                    hohe Wirkungsgrade durch die Nutzung des Brennwert-Effekts
+                  </td>
+                  <td>unvorhersehbare Entwicklung der Gas-Kosten</td>
+                </tr>
+                <tr>
+                  <td>mögliche Kombination mit erneuerbaren Energien</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>nachhaltiger Betrieb mit Bio-Gas</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contentPlaceholderSetup">
+      <div class="contentPlaceholder100">
+        <div class="sourceElement">
+          <a target="_tab" href="https://heizung.de/gasheizung/"
+            >https://heizung.de/gasheizung/</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="contentPlaceholderBottom">
+      <div class="contentPlaceholderSetup center noStyle">
+        <div class="contentPlaceholder33">
+          <div>
+            <a href="oelheizung.html"
+              ><i class="ms-Icon ms-Icon--ChevronLeftMed" aria-hidden="true"></i>
+              Zurück
+            </a>
+          </div>
+        </div>
+        <div class="contentPlaceholder33">
+          <div>
+            <a href="#top"
+              ><i class="ms-Icon ms-Icon--ChevronUpMed" aria-hidden="true"></i>
+              Nach oben
+              <i class="ms-Icon ms-Icon--ChevronUpMed" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+        <div class="contentPlaceholder33">
+          <div>
+            <a href="blockheizkraftwerk.html">
+              Weiter
+              <i class="ms-Icon ms-Icon--ChevronRightMed" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fußzeile -->
+    <div id="contentPlaceholderFooter" class="contentPlaceholderFooter">
+      <div class="noWrap">
+        <i class="ms-Icon ms-Icon--Frigid" aria-hidden="true"></i>
+      </div>
+      <div class="">Umweltschutz beim Heizen</div>
+      <div class="noWrap">2020</div>
+    </div>
+  </body>
+</html>

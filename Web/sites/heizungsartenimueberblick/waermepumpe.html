@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Wärmepumpe</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../images/favicon.png" type="image/png" />
+    <link rel="icon" href="../../images/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="../../css/form.css" />
+    <link rel="stylesheet" href="../../css/placeholders.css" />
+    <link rel="stylesheet" href="../../css/heizungsartenimueberblick.css" />
+    <!-- Für Microsoft Fluent UI Icon -->
+    <!-- Import von speziellen Schriftarten, welche Icons beihalten -->
+    <link
+      rel="stylesheet"
+      href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css"
+    />
+
+    <style>
+      .spaceLeft {
+        padding-left: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="error-DeviceWidth center">
+      <div>
+        Damit diese Seite korrekt dargestellt werden kann, ist ein Gerät mit
+        einer Mindesbreite von 500px erforderlich.<br />Fals Sie ein Mobiltelefon
+        nutzen sollten, versuchen Sie diese Website im Querformat anzusehen.
+      </div>
+    </div>
+    <!-- Menünavigation oberhalb -->
+    <div id="contentPlaceholderSuiteBar" class="navBar">
+      <div class="navLogo">
+        <a href="../../index.html"
+          ><i class="ms-Icon ms-Icon--Frigid" aria-hidden="true"></i
+        ></a>
+      </div>
+      <div class="navItem active">
+        Heizungsarten im Überblick
+        <div class="navItemDropdown flowDown">
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/waermepumpe.html"
+              >Wärmepumpe</a
+            >
+          </div>
+          <div class="navItem">
+            <a
+              href="../../sites/heizungsartenimueberblick/brenstoffzellenheizung.html"
+              >Brennstoffzellenheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/holzheizung.html"
+              >Holzheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/pelletheizung.html"
+              >Pelletheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/oelheizung.html"
+              >Ölheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/gasheizung.html"
+              >Gasheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a
+              href="../../sites/heizungsartenimueberblick/blockheizkraftwerk.html"
+              >Blockheizkraftwerk</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/elektroheizung.html"
+              >Elektroheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/solaranlage.html"
+              >Solartechnik</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="navItem">
+        <a
+          href="../../sites/Energieeffizienzklassen/Energieeffizienzklassen.html"
+          >Energieeffizienzklassen</a
+        >
+      </div>
+      <div class="navItem">
+        Dämmungen
+        <div class="navItemDropdown">
+          <div class="navItem">
+            <a href="../../sites/dämmungen/Außendämmung.html">Außendämmung</a>
+          </div>
+          <div class="navItem">
+            <a href="../../sites/dämmungen/innendämmung.html">Innendämmung</a>
+          </div>
+          <div class="navItem">
+            <a href="../../sites/dämmungen/kerndämmung.html">Kerndämmung</a>
+          </div>
+        </div>
+      </div>
+      <div class="navItem">
+        <a
+          href="../../sites/Tipps_zum_Umweltschonenden_Heizen/tippszumrichtigenheizen.html"
+          >Tipps beim Heizen</a
+        >
+      </div>
+      <div class="navItem">
+        <a href="../../sites/sources/sources.html">Quellen</a>
+      </div>
+
+      <div class="navAuthor">
+        <a href="../../sites/profiles/timo_woityschyn.html">Timo Woityschyn</a>
+        <div class="navItemDropdown">
+          <div class="navItem">
+            <a href="../../sites/profiles/all_authors.html">Alle Autoren</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="top" class="SuiteBarBlocker"></div>
+    <!-- Inhalt über dem eigentlichen Text geeignet für Überschriften... -->
+    <div id="contentPlaceholderTop" class="contentPlaceholderTop">
+      <div class="contentPlaceholderSetup">
+        <div class="contentPlaceholder15">
+          <div></div>
+        </div>
+        <div class="contentPlaceholder70 headLine">
+          <div>Wärmepumpe</div>
+        </div>
+        <div class="contentPlaceholder15"></div>
+      </div>
+    </div>
+    <!-- Inkalt in der Mitte -->
+    <div id="contentPlaceholderMiddle" class="contentPlaceholderSetup">
+      <div class="contentPlaceholder15 wrap">
+        <!-- Navigation auf einer Unterseite -->
+        <a href="#Quellen_der_Energiegewinnung">Quellen der Energiegewinnung</a>
+        <a href="#Funktionsweise">Funktionsweise</a>
+        <a href="#Kosten">Kosten</a>
+        <a href="#Vor-_und_Nachteile">Vor- und Nachteile</a>
+      </div>
+      <div class="contentPlaceholder65">
+        Eine Wärmepumpe ist eine Heizung, welche die in der Umwelt gespeicherte
+        thermische Energie nutzt, um Gebäude zu erwärmen. Anders als bei Holz-,
+        Öl- oder Gasheizungen, funktioniert das jedoch nicht durch eine
+        Verbrennung, sondern über einen komplizierten technischen Prozess. Wie in
+        einem Kühlschrank kommt es darauf an, thermische Energie mit geringen
+        Temperaturen auf ein höheres Niveau anzuheben. Während das im Kühlschrank
+        dazu führt, dass das Innere angenehm kühl bleibt, ermöglicht der Prozess
+        in der Wärmepumpe, dass die Umweltwärme im Heizungssystem verwendet
+        werden kann.
+      </div>
+
+      <div class="contentPlaceholder20"></div>
+    </div>
+
+    <div id="Quellen_der_Energiegewinnung" class="spacedDotts">
+      <hr />
+    </div>
+    <div class="contentPlaceholderSetup">
+      <div class="contentPlaceholder15">
+        <div>Quellen der Energiegewinnung</div>
+      </div>
+      <div class="contentPlaceholder65">
+        <div>
+          Je nachdem, in welcher Region sich Ihr Gebäude befindet, kann die
+          Umweltenergie der Wärmepumpe aus verschiedenen Quellen gewonnen werden.
+          Zur Auswahl steht dabei die Nutzung der thermischen Energie aus:
+          <ul>
+            <li>der Luft</li>
+            <li>dem Erdreich</li>
+            <li>dem Grundwasser</li>
+          </ul>
+        </div>
+      </div>
+      <div class="contentPlaceholder20"></div>
+    </div>
+
+    <div id="Funktionsweise" class="spacedDotts">
+      <hr />
+    </div>
+    <div class="contentPlaceholderSetup">
+      <div class="contentPlaceholder15">
+        <div>Funktionsweise</div>
+      </div>
+      <div class="contentPlaceholder25">
+        Sie wissen nun, dass eine Wärmepumpenheizung Umweltenergie nutzt, um
+        Raumwärme und Warmwasser bereitzustellen. Doch schaut man sich die
+        Funktionsweise der Wärmepumpe genauer an, ist der technische Prozess
+        hervorzuheben. Dabei kommen folgende Bauteile zum Einsatz: zwei
+        Wärmeübertrager, ein Verdichter, ein Entspannerventil. Darüber hinaus ist
+        die Wärmenutzungsanlage, also ein geschlossenes Rohrnetz wichtig, um die
+        Wärme auch in die gewünschten Bereiche im Gebäude zu leiten. Auf diese
+        Weise wird auch aus einer Wärmepumpe eine vollständige
+        Wärmepumpenheizung.
+      </div>
+      <div class="contentPlaceholder40">
+        <img
+          src="../../images/Grafik_Heizungsarten_Warmepumpe_Wissen_Funktion-Wa-rmepumpe_Toni-Mamic.png"
+        />
+        <div class="pictureUrl floatFix wrap">
+          <a
+            title="https://cdn0.scrvt.com/fb8496fd305492cbfa1c87030c44a4e8/1310bbbb2b234a36/be5ae820effd/v/b43e30092d32/Grafik_Heizungsarten_Warmepumpe_Wissen_Funktion-Wa-rmepumpe_Toni-Mamic.png"
+            href="https://cdn0.scrvt.com/fb8496fd305492cbfa1c87030c44a4e8/1310bbbb2b234a36/be5ae820effd/v/b43e30092d32/Grafik_Heizungsarten_Warmepumpe_Wissen_Funktion-Wa-rmepumpe_Toni-Mamic.png"
+            >Source:
+            https://cdn0.scrvt.com/fb8496fd305492cbfa1c87030c44a4e8/1310bbbb2b234a36/be5ae820effd/v/b43e30092d32/Grafik_Heizungsarten_Warmepumpe_Wissen_Funktion-Wa-rmepumpe_Toni-Mamic.png</a
+          >
+        </div>
+      </div>
+      <div class="contentPlaceholder20"></div>
+    </div>
+
+    <div id="Kosten" class="spacedDotts">
+      <hr />
+    </div>
+    <div class="contentPlaceholderSetup">
+      <div class="contentPlaceholder15">
+        <div>Kosten</div>
+      </div>
+      <div class="contentPlaceholder65">
+        <div>
+          Die größten Unterschiede treten bei der Wahl der Umweltenergiequelle
+          auf. Denn während bei einer Luft-Wärmepumpe kaum zusätzliche Technik
+          erforderlich ist, müssen bei einer Sole-Wärmepumpe auch die
+          Sondenbohrungen oder Flachkollektoren bezahlt werden. Generell
+          entstehen dabei Kosten von etwa 60 bis 80 Euro pro Meter Tiefenbohrung
+          oder 10 bis 20 Euro pro Quadratmeter Flächenkollektor. Bei einer
+          Wasser-Wärmepumpe entstehen Kosten durch die Bohrung der beiden
+          Brunnen, über die Grundwasser zum Heizgerät und zurück in das Erdreich
+          transportiert wird. Bei einem typischen Einfamilienhaus belaufen sich
+          diese auf etwa 5.000 bis 6.000 Euro.
+          <hr />
+          <div class="contentPlaceholderSetup">
+            <div class="contentPlaceholder15">
+              Kosten für die Wärmepumpe selbst
+            </div>
+            <div class="contentPlaceholder85">
+              Die Wärmepumpe selbst besteht unabhängig der Umweltenergie-Quelle
+              aus den gleichen Komponenten. Für den Einsatz in einem
+              Einfamilienhaus entstehen dabei Kosten von etwa 8.000 bis 12.000
+              Euro, die jedoch durch eine Förderung für eine Wärmepumpe
+              bezuschusst werden können. Die Preise für eine Wärmepumpe variieren
+              jedoch stark nach Region, Hersteller sowie Dienstleister und
+              stellen damit nur eine grobe Kosteneinschätzung dar.
+            </div>
+          </div>
+          <hr />
+          <div class="contentPlaceholderSetup">
+            <div class="contentPlaceholder15">
+              Kosten für den Betrieb der Wärmepumpe
+            </div>
+            <div class="contentPlaceholder85">
+              Da die meisten Wärmepumpen elektrisch arbeiten, verursachen Sie
+              auch Stromkosten. Die Höhe der Betriebskosten richtet sich dabei
+              nach der gewählten Umweltenergie-Quelle, dem energetischen Stand
+              des Gebäudes und der Art, in der die Wärme an die Räume übertragen
+              wird und kann nur für jedes Gebäude einzeln ermittelt werden.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="Vor-_und_Nachteile" class="spacedDotts">
+      <hr />
+    </div>
+    <div class="contentPlaceholderSetup">
+      <div class="contentPlaceholder15">
+        <div>Vor- und Nachteile</div>
+      </div>
+      <div class="contentPlaceholder65">
+        <div>
+          <div class="contentPlaceholder20">
+            <table class="pro_con">
+              <thead class="center">
+                <tr>
+                  <td>Vorteile</td>
+                  <td>Nachteile</td>
+                </tr>
+              </thead>
+              <tbody class="center">
+                <tr>
+                  <td>geringe Heizkosten</td>
+                  <td>vergleichsweise hohe Anschaffungskosten</td>
+                </tr>
+                <tr>
+                  <td>
+                    Unabhängigkeit von Preisschwankungen fossiler Energieträger
+                  </td>
+                  <td>höherer Aufwand durch genehmigungspflichtige Nutzung</td>
+                </tr>
+                <tr>
+                  <td>Finanzierung über staatliche Fördermittel möglich</td>
+                  <td>hohe Stromkosten bei fehlerhafter Planung</td>
+                </tr>
+                <tr>
+                  <td>wartungsarmer Betrieb</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Schonung fossiler Ressourcen</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>CO2-freier Betrieb</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="contentPlaceholder20"></div>
+    </div>
+    <div class="contentPlaceholderSetup">
+      <div class="contentPlaceholder100">
+        <div class="sourceElement">
+          <a target="_tab" href="https://heizung.de/waermepumpe/"
+            >https://heizung.de/waermepumpe/</a
+          >
+        </div>
+      </div>
+    </div>
+    <div id="contentPlaceholderBottom" class="contentPlaceholderBottom">
+      <div class="contentPlaceholderSetup center noStyle">
+        <div class="contentPlaceholder33"></div>
+        <div class="contentPlaceholder33">
+          <div>
+            <a href="#top"
+              ><i class="ms-Icon ms-Icon--ChevronUpMed" aria-hidden="true"></i>
+              Nach oben
+              <i class="ms-Icon ms-Icon--ChevronUpMed" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+        <div class="contentPlaceholder33">
+          <div>
+            <a href="brenstoffzellenheizung.html">
+              Weiter
+              <i class="ms-Icon ms-Icon--ChevronRightMed" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fußzeile -->
+    <div id="contentPlaceholderFooter" class="contentPlaceholderFooter">
+      <div class="noWrap">
+        <i class="ms-Icon ms-Icon--Frigid" aria-hidden="true"></i>
+      </div>
+      <div class="">Umweltschutz beim Heizen</div>
+      <div class="noWrap">2020</div>
+    </div>
+  </body>
+</html>

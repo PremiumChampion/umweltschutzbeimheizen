@@ -1,0 +1,425 @@
+/* Displayes an error if the Devide is under 470px wide */
+
+@media (max-width: 470px) {
+  .error-DeviceWidth {
+    /* Fixes the error on the screen */
+    position: fixed;
+    /* Start of the error */
+    top: 0;
+    /* Start of hte error */
+    left: 0;
+    /* FullWindowHeight */
+    height: 100%;
+    /* FullWindowWidth */
+    width: 100%;
+    /* Display error: true */
+    display: block;
+    /* Error color */
+    background-color: var(--NavSelectColor);
+    /* Error text color */
+    color: white;
+  }
+  .navBar {
+    /* Dont display Navigation */
+    display: none;
+  }
+  .contentPlaceholderFooter * {
+    /* Dont display Footer */
+    display: none;
+  }
+}
+
+/* Displayes no error if the Devide is fitting */
+
+@media (min-width: 471px) {
+  .error-DeviceWidth {
+    /* Display error: flase */
+    display: none;
+  }
+}
+
+/* Sets the items to be displayed vertically when the screen has a maximum width of 799px */
+
+@media (max-width: 799px) {
+  .navBar :hover .navItemDropdown {
+    /* Displays the items as flex container */
+    display: flex;
+    /* Wraps items in colums */
+    flex-direction: column;
+    /* Allwos to wrap */
+    flex-wrap: wrap;
+  }
+}
+
+/* Sets the items to be displayed horizontally when the screen is at least 800px wide */
+
+@media (min-width: 800px) {
+  .navBar :hover .navItemDropdown {
+    /* Displays the items as inline flex */
+    display: inline-flex;
+  }
+}
+
+/* Variables for color sceme */
+
+:root {
+  /* Bolor of the Navigation bar */
+  --NavBackgroundColor: #100e17;
+  /* Color for the text in the NavigationBar/Footer */
+  --TextColor: white;
+  /* Hover Indicator coler */
+  --NavSelectColor: #f43605;
+  /* The footer background */
+  --FooterBackgroundColor: linear-gradient(170deg, #ff8a00, #e52e71);
+  /* The Fropdown Bachground-color */
+  --DropdownBackground: rgba(255, 25, 13, 0.9);
+  /* The normal Background */
+  --NormalBackgroundGradiend: linear-gradient(190deg, #f5f7fa 0%, #c3cfe2a6 50%, #f5f7fa 100%);
+  /* Border above the footer */
+  --FooterSelectColor: #100e17;
+}
+
+html {
+  /* Sets the navigation on a page not to jump but to scroll smooth */
+  scroll-behavior: smooth;
+}
+
+/* Applies to the whole body */
+
+body {
+  /* Fill full screen */
+  margin: 0;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  /* Font size is mostly 17px */
+  font-size: 17px;
+  /* Cursor shouldnt change */
+  cursor: default;
+  /* Text color should be black */
+  color: black;
+  /* Hide scrollbar for IE and Edge */
+  -ms-overflow-style: none;
+  /* The Background image */
+  background-image: url(./../images/pipes_grey_small.png), var(--NormalBackgroundGradiend);
+  /* Sets the Body to be at least screen filling */
+  min-height: 100vh;
+}
+
+/* Applies to all links on a page */
+
+body a {
+  /*  Don not color links */
+  color: inherit;
+  /* User Normal Pointer */
+  cursor: default;
+}
+
+/* Sets the body not to display a scrollbar */
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.navBar {
+  /* Full Window width */
+  width: 100%;
+  /* Navigation-Bar Color */
+  background-color: var(--NavBackgroundColor);
+  /* Text-Color */
+  color: var(--TextColor);
+  /* Allways Displays the Navigation-Bar at the Top of the Screen */
+  position: fixed;
+  /* Positioning ot the Naviagtion-Bar */
+  top: 0;
+}
+
+/* Blocks Content to flow behind the NAvigation-Bar */
+
+.SuiteBarBlocker {
+  height: 36px;
+}
+
+/* Styles the Single Nabigation-Bar Items */
+
+.navItem, .navAuthor, .navLogo {
+  /* Sets the Items to Display as inline-elements to position themselfs horizontally */
+  display: inline-flex;
+  /* Gives the Items a Padding, so they are easy to look at for the End-User */
+  padding: 12px;
+  /* Defines the Height of the element before the Padding applyes */
+  height: 16px;
+  /* Sets the border to the Background-Color to disable the Navigation-Bar changing their height */
+  border-bottom: var(--NavBackgroundColor) solid 3px;
+}
+
+/* Tells the Navigtion bar not to display a-Tag style */
+
+.navItem>a, .navAuthor>a, .navLogo>a {
+  /* Sets the normal Link style out of order */
+  text-decoration: none;
+}
+
+/* Sets the item selection indicator, so the user knows his mouse is over an specific element */
+
+.navBar>*:hover, .active {
+  /* Indicator: a red underline */
+  border-bottom: var(--NavSelectColor) solid 3px;
+}
+
+.navItemDropdown>*:hover {
+  /* Indicator: a red underline */
+  border-bottom: var(--FooterSelectColor) solid 3px;
+}
+
+/* Styles the Appearence of the Dropdown Menue Items */
+
+.navItemDropdown {
+  /* Sets the Background to a tranclucent black  */
+  background-color: var(--DropdownBackground);
+  /* Gives the DropdownNavigation athe positioning */
+  position: absolute;
+  /* Hides the DropdownNavigation on page load */
+  display: none;
+  /* Sets the highes width of the DropdownNavigation */
+  max-width: 1000px;
+  /* Sets the Items to display in the next line */
+  overflow-wrap: normal;
+  /* Applies a box shadow */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Styles gives the DropdownItems a Border to prevent them from jumping around when hovered */
+
+.navItemDropdown>* {
+  /* The Maximum width of an element */
+  max-width: 333px;
+  /* Sets the border to the Background-Color to disable the Navigation-Bar changing their height */
+  border-bottom: var(--DropdownBackground) solid 3px;
+}
+
+/* Positioning when a NavigationBar item is hovered and it has a DropdownNavigation */
+
+.navBar :hover .navItemDropdown {
+  /* Position from the Top */
+  top: 43px;
+  /* Translate 10px in negative X-Axcis to position the Word under an other */
+  transform: translateX(-10px);
+}
+
+/* Allows the User to set the DropdownNavigation to flow downwards */
+
+.navBar :hover .navItemDropdown.flowDown {
+  /* Sets the Items to be displayed as a flex-container */
+  display: flex;
+  /* Sets the direction of the Flex container */
+  flex-direction: column;
+  /* Allows the Text to wrap into new Line */
+  flex-wrap: wrap;
+  /* Sets the minimum width of the DropdownNavigation */
+  min-width: 250px;
+}
+
+/* Spacing around the Navigation-Bar-Logo */
+
+.navLogo {
+  /* Spacing of the Navigation Logo */
+  margin: 0 20px 0 10px;
+  /* Applies padding so the border is displayed correctly */
+  padding-bottom: 13px;
+}
+
+/* Positioning of the Author-Placeholder */
+
+.navAuthor {
+  /* Sets the Author to be displayed at the right Side */
+  float: right;
+  /* Necesarry becaause of the Flex-Display */
+  margin-left: auto;
+  /* Sets the item to be pushed inwards */
+  margin-right: 10px;
+}
+
+/* Fixes NavBar border position */
+
+.navLogo, .navAuthor {
+  /* Applies padding so the border is displayed correctly */
+  padding-bottom: 13px;
+}
+
+/* Applies to the on page Navigation */
+
+.pageNavigation {
+  /* Sets the items to be displayed in a flex container */
+  display: flex;
+  /* Sets the Items to arrange in a colum */
+  flex-direction: column;
+  /* allowes the items to wrap */
+  flex-wrap: wrap;
+}
+
+/* Applies to the Footer Container */
+
+.contentPlaceholderFooter {
+  /* Sets the Footer container to act a an Felx Box */
+  display: flex;
+  /* Sets the items to space evenly within the container */
+  justify-content: space-evenly;
+  /* Sets the items to allign in the center of the flex conatiner */
+  align-items: center;
+  /* Sets the Footer to be fixed on the Page */
+  position: fixed;
+  /* Places the Footer at the bottom of the Webpage */
+  bottom: 0;
+  /* Specifies the width of the Footer */
+  width: 100%;
+  /* Sets the line on top of the Footer */
+  border-top: var(--FooterSelectColor) solid 6px;
+  /* Sets the Backgroundcolor of the Footer */
+  background: var(--FooterBackgroundColor);
+  /* Sets the Text Color to white */
+  color: var(--TextColor);
+}
+
+/* Applies to the Items in the Footer Container */
+
+.contentPlaceholderFooter>div {
+  /* Gives the Items a niche appearance */
+  padding: 10px;
+}
+
+/* Custom PseudoClass Tells the items to wrap if they cant fit in their container */
+
+.wrap * {
+  /* Displays the items as a block element */
+  display: block;
+  /* Sets the Text overflow not to be shown */
+  overflow: hidden;
+  /* Tells not to break lines */
+  white-space: nowrap;
+  /* Sets the Overflow indicator to be '...' */
+  text-overflow: ellipsis;
+}
+
+/* Custom PseudoClass Tells the items not to wrap if they cant fit in their container */
+
+.noWrap {
+  /* Sets the overflow to be allways visable */
+  overflow: visible !important;
+}
+
+/* Class for the Page Headline */
+
+.headLine {
+  /* Sets the Font-Size to 30ppx */
+  font-size: 30px;
+  /* Sets the Headline to be underlind */
+  text-decoration: underline;
+  /* Sets the Headline to be displayed centered */
+  text-align: center;
+}
+
+/* Class for centering items */
+
+.center *, .center, .center * * {
+  /* Alings the text centered */
+  text-align: center;
+  /* Align the items vertically in the middle */
+  vertical-align: middle;
+}
+
+/* Class for justify Text/Containers */
+
+.justify {
+  /* Alings the text justified */
+  text-align: justify;
+  /* Streches the Items over the full width */
+  align-items: stretch;
+  /* Sets the spacing inbetween the elements to be the same as well as from the border */
+  justify-content: space-evenly;
+}
+
+/* Removes Styling information from the text / Container */
+
+.noStyle *, .noStyle {
+  /* Sets to display no Text decoration */
+  text-decoration: none;
+  /* Sets no list style */
+  list-style: none;
+  /* Sets no list style type */
+  list-style-type: none;
+  /* Removes the border if existent */
+  border: none !important;
+}
+
+/* Sets a custom horizontal line property */
+
+hr {
+  /* Sets the border to be 1px thick */
+  border: black solid 1px;
+}
+
+/* Class to display a custom horizontal line */
+
+.spacedDotts hr {
+  /* Dont display the line */
+  border: none;
+}
+
+/* Apply after the horizontal line */
+
+.spacedDotts hr::after {
+  /* Sets the Content to be "•" */
+  content: "••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••";
+  /* Space between the "•" */
+  letter-spacing: 4px;
+  /* Sets the Height of the  */
+  font-size: 35px;
+  /* Applies a padding to the bottom to space the divider evenly */
+  padding-bottom: 10px;
+}
+
+/* Fices Float issues */
+
+.floatFix::before, .floatFix::after {
+  /* clears the float before and after an element has been floated  */
+  clear: both;
+}
+
+/* Custom styling for the source element */
+
+.pictureUrl {
+  /* sets the width to 100% of the parent container */
+  width: 100%;
+  /* Gives it al relative positioning */
+  position: relative;
+  /* Floats the Text to the right */
+  float: right;
+}
+
+*.sourceElement::before {
+  content: "Aus: "
+}
+
+.sourceElement {
+  text-align: right;
+  font-style: italic;
+}
+
+/* Applies to every table */
+
+table {
+  /* Sets the width of the table to be 100% of the Parent container */
+  width: 100%;
+}
+
+/* Applies a shadow to the Tables body */
+
+table>tbody {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Applies a shadow to the images with class shadow */
+
+img.shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}

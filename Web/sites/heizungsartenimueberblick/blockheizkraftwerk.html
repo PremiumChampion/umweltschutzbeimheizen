@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Blockheizkraftwerk(BHKW)</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../images/favicon.png" type="image/png" />
+    <link rel="icon" href="../../images/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="../../css/form.css" />
+    <link rel="stylesheet" href="../../css/placeholders.css" />
+    <link rel="stylesheet" href="../../css/heizungsartenimueberblick.css" />
+    <!-- Für Microsoft Fluent UI Icon -->
+    <!-- Import von speziellen Schriftarten, welche Icons beihalten -->
+    <link
+      rel="stylesheet"
+      href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css"
+    />
+
+    <style>
+      .artenOverview tbody td {
+        border-top: black dotted 2px;
+      }
+
+      .artenOverview tbody td:nth-child(1) {
+        border-left: none;
+      }
+
+      .artenOverview tbody tr:nth-child(1) td {
+        border-top: black solid 2px;
+      }
+
+      .artenOverview tbody td:nth-child(2),
+      .artenOverview tbody td:nth-child(3) {
+        border-left: black dotted 2px;
+      }
+
+      .artenOverview tbody tr:nth-child(odd) {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+
+      .artenOverview {
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="error-DeviceWidth center">
+      <div>
+        Damit diese Seite korrekt dargestellt werden kann, ist ein Gerät mit
+        einer Mindesbreite von 500px erforderlich.<br />Fals Sie ein Mobiltelefon
+        nutzen sollten, versuchen Sie diese Website im Querformat anzusehen.
+      </div>
+    </div>
+    <!-- Menünavigation oberhalb -->
+    <div id="contentPlaceholderSuiteBar" class="navBar">
+      <div class="navLogo">
+        <a href="../../index.html"
+          ><i class="ms-Icon ms-Icon--Frigid" aria-hidden="true"></i
+        ></a>
+      </div>
+      <div class="navItem active">
+        Heizungsarten im Überblick
+        <div class="navItemDropdown flowDown">
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/waermepumpe.html"
+              >Wärmepumpe</a
+            >
+          </div>
+          <div class="navItem">
+            <a
+              href="../../sites/heizungsartenimueberblick/brenstoffzellenheizung.html"
+              >Brennstoffzellenheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/holzheizung.html"
+              >Holzheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/pelletheizung.html"
+              >Pelletheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/oelheizung.html"
+              >Ölheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/gasheizung.html"
+              >Gasheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a
+              href="../../sites/heizungsartenimueberblick/blockheizkraftwerk.html"
+              >Blockheizkraftwerk</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/elektroheizung.html"
+              >Elektroheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/solaranlage.html"
+              >Solartechnik</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="navItem">
+        <a
+          href="../../sites/Energieeffizienzklassen/Energieeffizienzklassen.html"
+          >Energieeffizienzklassen</a
+        >
+      </div>
+      <div class="navItem">
+        Dämmungen
+        <div class="navItemDropdown">
+          <div class="navItem">
+            <a href="../../sites/dämmungen/Außendämmung.html">Außendämmung</a>
+          </div>
+          <div class="navItem">
+            <a href="../../sites/dämmungen/innendämmung.html">Innendämmung</a>
+          </div>
+          <div class="navItem">
+            <a href="../../sites/dämmungen/kerndämmung.html">Kerndämmung</a>
+          </div>
+        </div>
+      </div>
+      <div class="navItem">
+        <a
+          href="../../sites/Tipps_zum_Umweltschonenden_Heizen/tippszumrichtigenheizen.html"
+          >Tipps beim Heizen</a
+        >
+      </div>
+
+      <div class="navItem">
+        <a href="../../sites/sources/sources.html">Quellen</a>
+      </div>
+      <div class="navAuthor">
+        <a href="../../sites/profiles/timo_woityschyn.html">Timo Woityschyn</a>
+        <div class="navItemDropdown">
+          <div class="navItem">
+            <a href="../../sites/profiles/all_authors.html">Alle Autoren</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="top" class="SuiteBarBlocker"></div>
+    <!-- Inhalt über dem eigentlichen Text geeignet für Überschriften... -->
+    <div id="contentPlaceholderTop" class="contentPlaceholderTop">
+      <div class="contentPlaceholderSetup">
+        <div class="contentPlaceholder15">
+          <div></div>
+        </div>
+        <div class="contentPlaceholder70 headLine">
+          <div>Blockheizkraftwerk(BHKW)</div>
+        </div>
+        <div class="contentPlaceholder15"></div>
+      </div>
+    </div>
+    <!-- Inkalt in der Mitte -->
+    <div id="contentPlaceholderMiddle" class="contentPlaceholderSetup">
+      <div class="contentPlaceholder15 wrap">
+        <!-- Navigation auf einer Unterseite -->
+        <a href="#Funktion">Funktion</a>
+        <a href="#Arten">Arten</a>
+        <a href="#Brennstoffe">Brennstoffe</a>
+        <a href="#Kosten">Kosten</a>
+        <a href="#Vor-_und_Nachteile">Vor- und Nachteile</a>
+      </div>
+      <div class="contentPlaceholder45">
+        Blockheizkraftwerke (fälschlicherweise häufig auch als Blockkraftwerke
+        oder Blockheizwerke bezeichnet) sind moderne Heizsysteme, die nicht nur
+        Wärme für Heizung und Warmwasser, sondern auch Strom zur Deckung des
+        eigenen Bedarfs bereitstellen. Sie nutzen die eingesetzten Energieträger
+        damit gleich doppelt aus und erreichen so eine hohe Effizienz.
+      </div>
+      <div class="contentPlaceholder20">
+        <img
+          class="shadow"
+          src="https://cdn0.scrvt.com/fb8496fd305492cbfa1c87030c44a4e8/492c2cb343f5f361/9c8a90dc2ce8/v/623004f7e050/bhkw.jpg"
+        />
+        <div class="pictureUrl floatFix wrap">
+          <a
+            href="https://cdn0.scrvt.com/fb8496fd305492cbfa1c87030c44a4e8/1310bbbb2b234a36/be5ae820effd/v/b43e30092d32/Grafik_Heizungsarten_Warmepumpe_Wissen_Funktion-Wa-rmepumpe_Toni-Mamic.png"
+            >Source:
+            https://cdn0.scrvt.com/fb8496fd305492cbfa1c87030c44a4e8/1310bbbb2b234a36/be5ae820effd/v/b43e30092d32/Grafik_Heizungsarten_Warmepumpe_Wissen_Funktion-Wa-rmepumpe_Toni-Mamic.png</a
+          >
+        </div>
+      </div>
+    </div>
+    <div id="Funktion" class="spacedDotts">
+      <hr />
+    </div>
+    <div class="contentPlaceholderSetup">
+      <div class="contentPlaceholder15">
+        Funktion
+      </div>
+      <div class="contentPlaceholder45">
+        <div>
+          Die Funktionsweise eines BHKW beruht auf seinem Kern: einem
+          Verbrennungsmotor. Dadurch kann das Blockheizkraftwerk mit Öl, Gas,
+          Heizöl oder Holz betrieben werden und funktioniert wie ein Motor im
+          Auto. Der Unterschied: Während das Auto die Kraft auf die Straße
+          überträgt, betreibt der Motor im Blockheizkraftwerk einen Generator zur
+          Stromerzeugung. Die bei der Verbrennung entstandene Abwärme wird
+          zurückgewonnen und zur Heizung und Warmwasserbereitung genutzt.
+          <br />
+          <br />
+          Während konventionelle Stromerzeuger nur etwa 40 Prozent der im
+          Brennstoff gespeicherten Energie nutzen können, erreichen BHKWs
+          Wirkungsgrade von bis zu 90 Prozent. Durch die kombinierte Strom- und
+          Wärmeerzeugung können sie also fast die ganze im Brennstoff
+          gespeicherte Energie verwerten. Bedingt durch den Aufbau eines
+          Blockheizkraftwerks können Strom und Wärme ungefähr in einem Verhältnis
+          von eins zu drei erzeugt werden. Bei einer elektrischen Leistung von
+          einem Kilowatt kann die Heizung im Haus dabei eine thermische Leistung
+          von etwa drei Kilowatt nutzen.
+        </div>
+      </div>
+      <div class="contentPlaceholder40">
+        <img src="../../images/Infografik-Funktionsweise-BHKW-Toni-Mamic.png" />
+        <div class="pictureUrl floatFix wrap">
+          <a
+            title="https://cdn0.scrvt.com/fb8496fd305492cbfa1c87030c44a4e8/29155537e9321ef1/c234c40052b1/v/aa301f3ae738/Infografik-Funktionsweise-BHKW-Toni-Mamic.png"
+            href="https://cdn0.scrvt.com/fb8496fd305492cbfa1c87030c44a4e8/29155537e9321ef1/c234c40052b1/v/aa301f3ae738/Infografik-Funktionsweise-BHKW-Toni-Mamic.png"
+            >Source:
+            https://cdn0.scrvt.com/fb8496fd305492cbfa1c87030c44a4e8/29155537e9321ef1/c234c40052b1/v/aa301f3ae738/Infografik-Funktionsweise-BHKW-Toni-Mamic.png</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div id="Arten" class="spacedDotts">
+      <hr />
+    </div>
+    <div class="contentPlaceholderSetup">
+      <div class="contentPlaceholder15">
+        <div>Arten</div>
+      </div>
+      <div class="contentPlaceholder65">
+        <div>
+          Blockheizkraftwerke werden nach der Höhe ihrer elektrischen Leistung in
+          verschiedene Kategorien eingeteilt. Für den Einsatz im Gebäudebereich
+          unterscheidet man dabei:
+          <ol>
+            <li>
+              Nano-Blockheizkraftwerke (elektrische Leistung bis zu 2,5 Kilowatt)
+            </li>
+            <li>
+              Mikro-Blockheizkraftwerke (elektrische Leistung bis zu 15 Kilowatt)
+            </li>
+            <li>
+              Mini-Blockheizkraftwerke (elektrische Leistung bis zu 50 Kilowatt)
+            </li>
+          </ol>
+          <table class="artenOverview">
+            <thead class="center">
+              <tr>
+                <td>Elektrische Leistung</td>
+                <td>Modell</td>
+                <td>Einsatzmöglichkeit</td>
+              </tr>
+            </thead>
+            <tbody class="center">
+              <tr>
+                <td>ab 5 MW</td>
+                <td>Heizkraftwerk</td>
+                <td>Stadtviertel</td>
+              </tr>
+              <tr>
+                <td>zwischen 50 kW und 5 MW</td>
+                <td>(Groß-)BHKW</td>
+                <td>öffentliche Gebäude, Industrie, Wohnblock</td>
+              </tr>
+              <tr>
+                <td>zwischen 15 und 50 kW</td>
+                <td>Mini-BHKW</td>
+                <td>öffentliche Gebäude, Kleingewerbe, Mehrfamilienhäuser</td>
+              </tr>
+              <tr>
+                <td>zwischen 2,5 kW und 15 kW</td>
+                <td>Mikro-BHKW</td>
+                <td>Ein- bis Mehrfamilienhäuser</td>
+              </tr>
+              <tr>
+                <td>unter 2,5 kW</td>
+                <td>Nano-BHKW</td>
+                <td>Ein- oder Zweifamilienhäuser</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="contentPlaceholder20"></div>
+    </div>
+
+    <div id="Brennstoffe" class="spacedDotts">
+      <hr />
+    </div>
+    <div class="contentPlaceholderSetup">
+      <div class="contentPlaceholder15">
+        <div>Brennstoffe</div>
+      </div>
+      <div class="contentPlaceholder65">
+        Wie im Auto kann auch der Motor eines Blockheizkraftwerks mit
+        verschiedenen Brennstoffen betrieben werden.
+        <br />
+        <br />
+        Diese sind:
+        <ul>
+          <li>Erd- oder Biogas</li>
+          <li>Flüssiggas</li>
+          <li>Heizöl oder Bio-Heizöl</li>
+          <li>Holz</li>
+        </ul>
+      </div>
+      <div class="contentPlaceholder20"></div>
+    </div>
+
+    <div id="Kosten" class="spacedDotts">
+      <hr />
+    </div>
+    <div class="contentPlaceholderSetup">
+      <div class="contentPlaceholder15">
+        <div>Kosten</div>
+      </div>
+      <div class="contentPlaceholder65">
+        <div>
+          Die Kosten eines BHKWs untergliedern sich generell in drei Bereiche.
+          Diese sind:
+          <ol>
+            <li>Erschließungskosten für Brennstoffanschluss- oder Lagerung</li>
+            <li>die Kosten für das Blockheizkraftwerk selbst</li>
+            <li>
+              die Verbrauchskosten, die im laufenden Betrieb der Anlage entstehen
+            </li>
+          </ol>
+
+          <hr />
+          <div class="contentPlaceholderSetup">
+            <div class="contentPlaceholder15">
+              Kosten für die Brennstoff-infrastruktur
+            </div>
+            <div class="contentPlaceholder85">
+              Um ein Blockheizkraftwerk betreiben zu können, müssen sich
+              Hausbesitzer zuerst für einen der genannten Brennstoffe
+              entscheiden. Im Bereich moderner Einfamilienhäuser kommt dabei
+              hauptsächlich Erd-, Bio- oder Flüssiggas infrage. Liegt eine
+              öffentliche Gasleitung in der Nähe des Gebäudes, entstehen durch
+              den Anschluss Kosten von rund 1.500 bis 3.000 Euro. Während der
+              Versorger die Leitung von der Straße bis ins Haus erstellt, liegt
+              die Gasleitung innerhalb des Gebäudes in der Verantwortung des
+              Hausbesitzers.
+              <br /><br />
+              Wenn zwischen Haus und Straßenleitung eine weite Entfernung
+              überwunden werden muss, können die Kosten für den Gas-Anschluss
+              höher ausfallen. Soll das Blockheizkraftwerk stattdessen mit
+              Flüssiggas betrieben werden, muss eine Tankanlage installiert
+              werden, die in der Regel oberirdisch vor dem Haus aufgestellt wird.
+              Der Flüssiggastank lässt sich dabei kaufen oder mieten. Für die
+              Kaufvariante, die im Nachhinein eine freie Wahl des Gas-Anbieters
+              ermöglicht, müssen Hausbesitzer mit Kosten von rund 2.000 bis 3.000
+              Euro rechnen.
+            </div>
+          </div>
+          <hr />
+          <div class="contentPlaceholderSetup">
+            <div class="contentPlaceholder15">
+              Kosten und Förderung für das Blockheizkraftwerk
+            </div>
+            <div class="contentPlaceholder85">
+              Da die meisten Wärmepumpen elektrisch arbeiten, verursachen Sie
+              auch Stromkosten. Die Höhe der Betriebskosten richtet sich dabei
+              nach der gewählten Umweltenergie-Quelle, dem energetischen Stand
+              des Gebäudes und der Art, in der die Wärme an die Räume übertragen
+              wird und kann nur für jedes Gebäude einzeln ermittelt werden.
+            </div>
+          </div>
+          <hr />
+          <div class="contentPlaceholderSetup">
+            <div class="contentPlaceholder15">
+              Die Verbrauchskosten einer BHKW-Anlage
+            </div>
+            <div class="contentPlaceholder85">
+              Die Verbrauchskosten für ein Blockheizkraftwerk setzen sich
+              zusammen aus:
+              <ul>
+                <li>Brennstoffkosten</li>
+                <li>Vergütung</li>
+                <li>Einsparungen</li>
+              </ul>
+              Während jede selbst genutzte Kilowattstunde dabei mindestens Kosten
+              in Höhe des aktuellen Strompreises einspart, gibt es für jede
+              eingespeiste Kilowattstunde etwa zehn bis zwölf Cent
+              (zusammengesetzt aus KWK-Zuschlag, Börsen-Strompreis und Vergütung
+              für die vermiedene Netznutzung). Wie hoch die Kosten ausfallen,
+              hängt dabei neben der energetischen Qualität des Gebäudes auch von
+              der Art, in der die BHKW-Anlage im Haus eingebunden wurde und dem
+              Verhalten der Nutzer ab. Eine sichere Aussage kann nur gemacht
+              werden, wenn diese Faktoren für jedes Gebäude einzeln bewertet
+              werden.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="Vor-_und_Nachteile" class="spacedDotts">
+      <hr />
+    </div>
+    <div class="contentPlaceholderSetup">
+      <div class="contentPlaceholder15">
+        <div>Vor- und Nachteile</div>
+      </div>
+      <div class="contentPlaceholder65">
+        <div>
+          <div class="contentPlaceholder20">
+            <table class="pro_con">
+              <thead class="center">
+                <tr>
+                  <td>Vorteile</td>
+                  <td>Nachteile</td>
+                </tr>
+              </thead>
+              <tbody class="center">
+                <tr>
+                  <td>hoher Wirkungsgrad</td>
+                  <td>vergleichsweise hohe Anschaffungskosten</td>
+                </tr>
+                <tr>
+                  <td>Eigenversorgung mit Strom möglich</td>
+                  <td>hoher Planungsaufwand für effiziente Einbindung</td>
+                </tr>
+                <tr>
+                  <td>zunehmende Unabhängigkeit von Stromversorgern</td>
+                  <td>meist Abhängigkeit von fossilen Rohstoffen</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="contentPlaceholder20"></div>
+    </div>
+    <div class="contentPlaceholderSetup">
+      <div class="contentPlaceholder100">
+        <div class="sourceElement">
+          <a target="_tab" href="https://heizung.de/bhkw/"
+            >https://heizung.de/bhkw/</a
+          >
+        </div>
+      </div>
+    </div>
+    <div id="contentPlaceholderBottom" class="contentPlaceholderBottom">
+      <div class="contentPlaceholderSetup center noStyle">
+        <div class="contentPlaceholder33">
+          <div>
+            <a href="gasheizung.html"
+              ><i class="ms-Icon ms-Icon--ChevronLeftMed" aria-hidden="true"></i>
+              Zurück
+            </a>
+          </div>
+        </div>
+        <div class="contentPlaceholder33">
+          <div>
+            <a href="#top"
+              ><i class="ms-Icon ms-Icon--ChevronUpMed" aria-hidden="true"></i>
+              Nach oben
+              <i class="ms-Icon ms-Icon--ChevronUpMed" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+        <div class="contentPlaceholder33">
+          <div>
+            <a href="elektroheizung.html">
+              Weiter
+              <i class="ms-Icon ms-Icon--ChevronRightMed" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fußzeile -->
+    <div id="contentPlaceholderFooter" class="contentPlaceholderFooter">
+      <div class="noWrap">
+        <i class="ms-Icon ms-Icon--Frigid" aria-hidden="true"></i>
+      </div>
+      <div class="">Umweltschutz beim Heizen</div>
+      <div class="noWrap">2020</div>
+    </div>
+  </body>
+</html>

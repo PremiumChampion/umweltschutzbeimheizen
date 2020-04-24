@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Umweltschutz beim Heizen</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../images/favicon.png" type="image/png" />
+    <link rel="icon" href="../../images/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="../../css/form.css" />
+    <link rel="stylesheet" href="../../css/placeholders.css" />
+    <!-- Für Microsoft Fluent UI Icon -->
+    <!-- Import von speziellen Schriftarten, welche Icons beihalten -->
+    <link
+      rel="stylesheet"
+      href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css"
+    />
+    <style>
+      table.noShadow > tbody {
+        box-shadow: none;
+      }
+      td > a {
+        display: block;
+        max-width: 900px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      tr.headLine {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="error-DeviceWidth center">
+      <div>
+        Damit diese Seite korrekt dargestellt werden kann, ist ein Gerät mit
+        einer Mindesbreite von 500px erforderlich.<br />Fals Sie ein Mobiltelefon
+        nutzen sollten, versuchen Sie diese Website im Querformat anzusehen.
+      </div>
+    </div>
+    <!-- Menünavigation oberhalb Klasse activ nicht vergessen-->
+    <div class="navBar">
+      <div class="navLogo">
+        <a href="../../index.html"
+          ><i class="ms-Icon ms-Icon--Frigid" aria-hidden="true"></i
+        ></a>
+      </div>
+      <div class="navItem">
+        Heizungsarten im Überblick
+        <div class="navItemDropdown flowDown">
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/waermepumpe.html"
+              >Wärmepumpe</a
+            >
+          </div>
+          <div class="navItem">
+            <a
+              href="../../sites/heizungsartenimueberblick/brenstoffzellenheizung.html"
+              >Brennstoffzellenheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/holzheizung.html"
+              >Holzheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/pelletheizung.html"
+              >Pelletheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/oelheizung.html"
+              >Ölheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/gasheizung.html"
+              >Gasheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a
+              href="../../sites/heizungsartenimueberblick/blockheizkraftwerk.html"
+              >Blockheizkraftwerk</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/elektroheizung.html"
+              >Elektroheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/solaranlage.html"
+              >Solartechnik</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="navItem">
+        <a
+          href="../../sites/Energieeffizienzklassen/Energieeffizienzklassen.html"
+          >Energieeffizienzklassen</a
+        >
+      </div>
+      <div class="navItem">
+        Dämmungen
+        <div class="navItemDropdown">
+          <div class="navItem">
+            <a href="../../sites/dämmungen/Außendämmung.html">Außendämmung</a>
+          </div>
+          <div class="navItem">
+            <a href="../../sites/dämmungen/innendämmung.html">Innendämmung</a>
+          </div>
+          <div class="navItem">
+            <a href="../../sites/dämmungen/kerndämmung.html">Kerndämmung</a>
+          </div>
+        </div>
+      </div>
+      <div class="navItem">
+        <a
+          href="../../sites/Tipps_zum_Umweltschonenden_Heizen/tippszumrichtigenheizen.html"
+          >Tipps beim Heizen</a
+        >
+      </div>
+      <div class="navItem active">
+        <a href="../../sites/sources/sources.html">Quellen</a>
+      </div>
+      <div class="navAuthor">
+        <a href="../../sites/profiles/timo_woityschyn.html">Timo Woityschyn</a>
+        <div class="navItemDropdown">
+          <div class="navItem">
+            <a href="../../sites/profiles/all_authors.html">Alle Autoren</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="top" class="SuiteBarBlocker"></div>
+    <div></div>
+    <!-- Inhalt über dem eigentlichen Text geeignet für Überschriften... -->
+    <div class="contentPlaceholderTop">
+      <div class="contentPlaceholderSetup">
+        <div class="contentPlaceholder15">
+          <div></div>
+        </div>
+        <div class="contentPlaceholder70 headLine">
+          <div>Unsere Quellen</div>
+        </div>
+        <div class="contentPlaceholder15"></div>
+      </div>
+    </div>
+    <!-- Inkalt in der Mitte -->
+    <div class="contentPlaceholderSetup">
+      <div class="contentPlaceholder15 wrap">
+        <!-- Navigation auf einer Unterseite -->
+        <a href="#generalCSS">CSS Quellen</a>
+        <a href="#generalHTML">HTML Quellen</a>
+        <a href="#content">Inhalte</a>
+        <a href="#images">Bilder</a>
+      </div>
+      <div class="contentPlaceholder70">
+        <table class="noShadow">
+          <tbody>
+            <tr id="generalCSS" class="center headLine">
+              <td colspan="2">
+                <hr />
+                CSS
+                <hr />
+              </td>
+            </tr>
+            <tr>
+              <td>Flexbox</td>
+              <td>
+                <a
+                  href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+                  target="_tab"
+                  >https://css-tricks.com/snippets/css/a-guide-to-flexbox/</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>w3schools CSS</td>
+              <td>
+                <a href="https://www.w3schools.com/css/default.asp" target="_tab"
+                  >https://www.w3schools.com/css/default.asp</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>MDN webdocs CSS</td>
+              <td>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                  target="_tab"
+                  >https://developer.mozilla.org/en-US/docs/Web/CSS</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>Microsoft Fluent UI Icons</td>
+              <td>
+                <a
+                  href="https://developer.microsoft.com/en-us/fluentui#/styles/web/icons"
+                  target="_tab"
+                  >https://developer.microsoft.com/en-us/fluentui#/styles/web/icons</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>Masseinheiten</td>
+              <td>
+                <a
+                  href="https://www.mediaevent.de/tutorial/masseinheiten.html"
+                  target="_tab"
+                  >https://www.mediaevent.de/tutorial/masseinheiten.html</a
+                >
+              </td>
+            </tr>
+            <tr id="generalHTML" class="center headLine">
+              <td colspan="2">
+                <hr />
+                HTML
+                <hr />
+              </td>
+            </tr>
+            <tr>
+              <td>w3schools HTML</td>
+              <td>
+                <a
+                  href="https://www.w3schools.com/html/default.asp"
+                  target="_tab"
+                  >https://www.w3schools.com/html/default.asp</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>MDN webdocs HTML</td>
+              <td>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                  target="_tab"
+                  >https://developer.mozilla.org/en-US/docs/Web/HTML</a
+                >
+              </td>
+            </tr>
+            <tr id="content" class="center headLine">
+              <td colspan="2">
+                <hr />
+                Inhalte
+                <hr />
+              </td>
+            </tr>
+            <tr>
+              <td>heizung.de</td>
+              <td>
+                <a href="https://heizung.de/waermepumpe/" target="_tab"
+                  >https://heizung.de/waermepumpe/</a
+                >
+                <a
+                  href="https://heizung.de/brennstoffzellenheizung/"
+                  target="_tab"
+                  >https://heizung.de/brennstoffzellenheizung/</a
+                >
+                <a href="https://heizung.de/holzheizung/" target="_tab"
+                  >https://heizung.de/holzheizung/</a
+                >
+                <a href="https://heizung.de/pelletheizung/" target="_tab"
+                  >https://heizung.de/pelletheizung/</a
+                >
+                <a href="https://heizung.de/oelheizung/" target="_tab"
+                  >https://heizung.de/oelheizung/</a
+                >
+                <a href="https://heizung.de/gasheizung/" target="_tab"
+                  >https://heizung.de/cc/</a
+                >
+                <a href="https://heizung.de/bhkw/" target="_tab"
+                  >https://heizung.de/bhkw/</a
+                >
+                <a href="https://heizung.de/elektroheizung/" target="_tab"
+                  >https://heizung.de/elektroheizung/</a
+                >
+                <a href="https://heizung.de/solartechnik/" target="_tab"
+                  >https://heizung.de/solartechnik/</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>service.ewe.de</td>
+              <td>
+                <a
+                  href="https://service.ewe.de/zuhause/energieeffizienzklassen"
+                  target="_tab"
+                  >https://service.ewe.de/zuhause/energieeffizienzklassen</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>energiesparenimhaushalt.de</td>
+              <td>
+                <a
+                  href="https://www.energiesparen-im-haushalt.de/energie/bauen-und-modernisieren/hausbau-regenerative-energie/energiebewusst-bauen-wohnen/emission-alternative-heizung/heizen-mit-der-sonne-solar/solarthermie-funktionsweise.html"
+                  target="_tab"
+                  >https://www.energiesparen-im-haushalt.de/energie/bauen-und-modernisieren/hausbau-regenerative-energie/energiebewusst-bauen-wohnen/emission-alternative-heizung/heizen-mit-der-sonne-solar/solarthermie-funktionsweise.html</a
+                >
+              </td>
+            </tr>
+            <tr id="images" class="center headLine">
+              <td colspan="2">
+                <hr />
+                Bilder
+                <hr />
+              </td>
+            </tr>
+            <tr>
+              <td>Hintergrundbild</td>
+              <td>
+                <a
+                  href="https://www.featurepics.com/FI/Thumb300/20160719/Pipe-Seamless-Background-4159592.jpg"
+                  target="_tab"
+                  >https://www.featurepics.com/FI/Thumb300/20160719/Pipe-Seamless-Background-4159592.jpg</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>Weitere Bilder</td>
+              <td>
+                <a
+                  target="_tab"
+                  href="https://www.oekologisch-bauen.info/uploads/images/breit/gross/waermepumpe-erdwaermekollektor.jpg"
+                  >https://www.oekologisch-bauen.info/uploads/images/breit/gross/waermepumpe-erdwaermekollektor.jpg</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <a
+                  target="_tab"
+                  href="https://cdn0.scrvt.com/fb8496fd305492cbfa1c87030c44a4e8/1310bbbb2b234a36/be5ae820effd/v/b43e30092d32/Grafik_Heizungsarten_Warmepumpe_Wissen_Funktion-Wa-rmepumpe_Toni-Mamic.png"
+                  >https://cdn0.scrvt.com/fb8496fd305492cbfa1c87030c44a4e8/1310bbbb2b234a36/be5ae820effd/v/b43e30092d32/Grafik_Heizungsarten_Warmepumpe_Wissen_Funktion-Wa-rmepumpe_Toni-Mamic.png</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <a
+                  target="_tab"
+                  href="https://cdn0.scrvt.com/fb8496fd305492cbfa1c87030c44a4e8/519a83d8a4287e62/f963ce24c75a/v/c4f3e0d940d9/Grafik_Lexikon_Die-kalte-Verbrennung-in-einer-Brennstoffzelle.png"
+                  >https://cdn0.scrvt.com/fb8496fd305492cbfa1c87030c44a4e8/519a83d8a4287e62/f963ce24c75a/v/c4f3e0d940d9/Grafik_Lexikon_Die-kalte-Verbrennung-in-einer-Brennstoffzelle.png</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <a
+                  target="_tab"
+                  href="https://honeck-waldschuetz.de/fileadmin/user_upload/Holzpellets_10_RGB16_RGBw_470x260px_IF.jpg"
+                  >https://honeck-waldschuetz.de/fileadmin/user_upload/Holzpellets_10_RGB16_RGBw_470x260px_IF.jpg</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <a
+                  target="_tab"
+                  href="https://cdn.heizpellets24.de/App_Themes/HeizPellets24/Slider/slider_holzbriketts.jpg"
+                  >https://cdn.heizpellets24.de/App_Themes/HeizPellets24/Slider/slider_holzbriketts.jpg</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <a
+                  target="_tab"
+                  href="https://bilder.t-online.de/b/83/09/80/40/id_83098040/610/tid_da/pellets.jpg"
+                  >https://bilder.t-online.de/b/83/09/80/40/id_83098040/610/tid_da/pellets.jpg</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <a
+                  target="_tab"
+                  href="https://d2h1t9243qzgjg.cloudfront.net/uploads/attachment/image/80963/untouched_heizung-oelheizung.jpg"
+                  >https://d2h1t9243qzgjg.cloudfront.net/uploads/attachment/image/80963/untouched_heizung-oelheizung.jpg</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <a
+                  target="_tab"
+                  href="https://cdn0.scrvt.com/fb8496fd305492cbfa1c87030c44a4e8/3333a2dc8ae720ca/07f757801428/v/74050ab49554/gasheizung-001.jpg"
+                  >https://cdn0.scrvt.com/fb8496fd305492cbfa1c87030c44a4e8/3333a2dc8ae720ca/07f757801428/v/74050ab49554/gasheizung-001.jpg</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <a
+                  target="_tab"
+                  href="https://cdn0.scrvt.com/fb8496fd305492cbfa1c87030c44a4e8/492c2cb343f5f361/9c8a90dc2ce8/v/623004f7e050/bhkw.jpg"
+                  >https://cdn0.scrvt.com/fb8496fd305492cbfa1c87030c44a4e8/492c2cb343f5f361/9c8a90dc2ce8/v/623004f7e050/bhkw.jpg</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <a
+                  target="_tab"
+                  href="https://www.heizsparer.de/wp-content/uploads/images/elektroheizung-konvektor-new-africa-adobestock.jpg"
+                  >https://www.heizsparer.de/wp-content/uploads/images/elektroheizung-konvektor-new-africa-adobestock.jpg</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <a
+                  target="_tab"
+                  href="https://www.guntamatic.com/fileadmin/Bilder/Brennstoffe/Produktuebersichtsseiten/Brennstoffe-Scheitholz.jpg"
+                  >https://www.guntamatic.com/fileadmin/Bilder/Brennstoffe/Produktuebersichtsseiten/Brennstoffe-Scheitholz.jpg</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <a
+                  target="_tab"
+                  href="https://www.verbraucherzentrale.de/sites/default/files/styles/article_full_image_desktop/public/2019-10/AdobeStock_268782123.jpg?itok=UNOsnwZ-&h=8e07be04"
+                  >https://www.verbraucherzentrale.de/sites/default/files/styles/article_full_image_desktop/public/2019-10/AdobeStock_268782123.jpg?itok=UNOsnwZ-&h=8e07be04</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <a
+                  target="_tab"
+                  href="https://www.energiesparen-im-haushalt.de/typo3temp/pics/52be4d0b4a.jpg"
+                >
+                  https://www.energiesparen-im-haushalt.de/typo3temp/pics/52be4d0b4a.jpg</a
+                >
+              </td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td>
+                <a target="_tab" href="https://www.umzug-24h.de/img/tipps.png"
+                  >https://www.umzug-24h.de/img/tipps.png</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <a
+                  target="_tab"
+                  href="https://www.heimhaus.de/fileadmin/_processed_/3/0/csm_Sonnenschutz_Winter_Rollladen_Header_01_82eedf8a03.jpg"
+                  >https://www.heimhaus.de/fileadmin/_processed_/3/0/csm_Sonnenschutz_Winter_Rollladen_Header_01_82eedf8a03.jpg</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <a
+                  target="_tab"
+                  href="https://cdn0.scrvt.com/fb8496fd305492cbfa1c87030c44a4e8/14af858d91e235c5/df6bd62457b2/v/ba38ed00c201/Infografik_optimale__raumtemperatur_toni_mamic.png"
+                  >https://cdn0.scrvt.com/fb8496fd305492cbfa1c87030c44a4e8/14af858d91e235c5/df6bd62457b2/v/ba38ed00c201/Infografik_optimale__raumtemperatur_toni_mamic.png</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <a
+                  target="_tab"
+                  href="https://previews.123rf.com/images/alexlmx/alexlmx1605/alexlmx160500183/56507242-digital-heizk%C3%B6rper-thermostatventil-3d-rendering.jpg"
+                  >https://previews.123rf.com/images/alexlmx/alexlmx1605/alexlmx160500183/56507242-digital-heizk%C3%B6rper-thermostatventil-3d-rendering.jpg</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <a
+                  target="_tab"
+                  href="https://heizung.de/__scrivito/to_binary/?encrypted_params=eyJiaW5hcnlfaWQiOiI2OGJhYTBlODdiM2VhYzYzLzUwNTQwZjVhODMxNS9JbmZvZ3JhZmlrX19yaWNodGlnX2x1ZWZ0ZW5fVG9uaV9NYW1pYy5wbmciLCJvYmpfaWQiOiI2OGJhYTBlODdiM2VhYzYzIiwidHJhbnNmb3JtYXRpb25fZGVmaW5pdGlvbiI6eyJ3aWR0aCI6MTI4MH19--960d3b9f334caf8f25d07582e0fb0a77997aafc9"
+                  >https://heizung.de/__scrivito/to_binary/?encrypted_params=eyJiaW5hcnlfaWQiOiI2OGJhYTBlODdiM2VhYzYzLzUwNTQwZjVhODMxNS9JbmZvZ3JhZmlrX19yaWNodGlnX2x1ZWZ0ZW5fVG9uaV9NYW1pYy5wbmciLCJvYmpfaWQiOiI2OGJhYTBlODdiM2VhYzYzIiwidHJhbnNmb3JtYXRpb25fZGVmaW5pdGlvbiI6eyJ3aWR0aCI6MTI4MH19--960d3b9f334caf8f25d07582e0fb0a77997aafc9</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <a
+                  target="_tab"
+                  href="https://www.sonnenschutzfolien-fenster.de/wp-content/uploads/2015/02/W%C3%A4rmestrahlung.jpg"
+                  >https://www.sonnenschutzfolien-fenster.de/wp-content/uploads/2015/02/W%C3%A4rmestrahlung.jpg</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <a
+                  target="_tab"
+                  href="https://www.kalksandstein.de/bv_ksi/binaries/content/82218/thumb_5_1807_pka_7_kapitel_2_aussenwaende_b_04_mit_hintergrund_de.jpg"
+                  >https://www.kalksandstein.de/bv_ksi/binaries/content/82218/thumb_5_1807_pka_7_kapitel_2_aussenwaende_b_04_mit_hintergrund_de.jpg</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <a
+                  target="_tab"
+                  href="https://sauerstoffkonzentratoren.com/wp-content/uploads/hook-1425312_640-300x286.png"
+                  >https://sauerstoffkonzentratoren.com/wp-content/uploads/hook-1425312_640-300x286.png</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <a
+                  target="_tab"
+                  href="http://www.dslohnevertragslaufzeit.org/wp-content/uploads/sites/14/2015/03/DSL-ohne-Mindestvertragslaufzeit-Nachteile.png"
+                  >http://www.dslohnevertragslaufzeit.org/wp-content/uploads/sites/14/2015/03/DSL-ohne-Mindestvertragslaufzeit-Nachteile.png</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <a
+                  target="_tab"
+                  href="https://baustoffplus.de/images/product_images/popup_images/optimal_18.jpg"
+                  >https://baustoffplus.de/images/product_images/popup_images/optimal_18.jpg</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <a
+                  target="_tab"
+                  href="https://www.hausjournal.net/wp-content/uploads/Au%C3%9Fend%C3%A4mmung1-720x480.jpg"
+                  >https://www.hausjournal.net/wp-content/uploads/Au%C3%9Fend%C3%A4mmung1-720x480.jpg</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <a
+                  target="_tab"
+                  href="https://i.ebayimg.com/images/g/0EAAAOxyhS9ThXpg/s-l500.jpg"
+                  >https://i.ebayimg.com/images/g/0EAAAOxyhS9ThXpg/s-l500.jpg</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <a
+                  target="_tab"
+                  href="https://www.haus.de/sites/default/files/styles/twitter/public/2019-04/innendaemmung-630009010-istock.jpg?h=119335f7&itok=flwlSEUa"
+                  >https://www.haus.de/sites/default/files/styles/twitter/public/2019-04/innendaemmung-630009010-istock.jpg?h=119335f7&itok=flwlSEUa</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="contentPlaceholder15"></div>
+    </div>
+    <!-- Inhalt am Ende der Seite (passend für zurück nach oben?)-->
+
+    <div id="contentPlaceholderBottom" class="contentPlaceholderBottom">
+      <div class="contentPlaceholderSetup center noStyle">
+        <div class="contentPlaceholder33">
+          <!-- <div><a href=""><i class="ms-Icon ms-Icon--ChevronLeftMed" aria-hidden="true"></i> Zurück </a></div> -->
+        </div>
+        <div class="contentPlaceholder33">
+          <div>
+            <a href="#top"
+              ><i class="ms-Icon ms-Icon--ChevronUpMed" aria-hidden="true"></i>
+              Nach oben
+              <i class="ms-Icon ms-Icon--ChevronUpMed" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+        <div class="contentPlaceholder33">
+          <!-- <div><a href=""> Weiter <i class="ms-Icon ms-Icon--ChevronRightMed" aria-hidden="true"></i></a></div> -->
+        </div>
+      </div>
+    </div>
+    <!-- Fußzeile -->
+    <div class="contentPlaceholderFooter">
+      <div class="noWrap">
+        <i class="ms-Icon ms-Icon--Frigid" aria-hidden="true"></i>
+      </div>
+      <div class="">Umweltschutz beim Heizen</div>
+      <div class="noWrap">2020</div>
+    </div>
+  </body>
+</html>

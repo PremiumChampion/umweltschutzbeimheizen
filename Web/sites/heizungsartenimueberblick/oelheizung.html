@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ölheizung</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../images/favicon.png" type="image/png" />
+    <link rel="icon" href="../../images/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="../../css/form.css" />
+    <link rel="stylesheet" href="../../css/placeholders.css" />
+    <link rel="stylesheet" href="../../css/heizungsartenimueberblick.css" />
+    <!-- Für Microsoft Fluent UI Icon -->
+    <!-- Import von speziellen Schriftarten, welche Icons beihalten -->
+    <link
+      rel="stylesheet"
+      href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="error-DeviceWidth center">
+      <div>
+        Damit diese Seite korrekt dargestellt werden kann, ist ein Gerät mit
+        einer Mindesbreite von 500px erforderlich.<br />Fals Sie ein Mobiltelefon
+        nutzen sollten, versuchen Sie diese Website im Querformat anzusehen.
+      </div>
+    </div>
+    <!-- Menünavigation oberhalb -->
+    <div id="contentPlaceholderSuiteBar" class="navBar">
+      <div class="navLogo">
+        <a href="../../index.html"
+          ><i class="ms-Icon ms-Icon--Frigid" aria-hidden="true"></i
+        ></a>
+      </div>
+      <div class="navItem active">
+        Heizungsarten im Überblick
+        <div class="navItemDropdown flowDown">
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/waermepumpe.html"
+              >Wärmepumpe</a
+            >
+          </div>
+          <div class="navItem">
+            <a
+              href="../../sites/heizungsartenimueberblick/brenstoffzellenheizung.html"
+              >Brennstoffzellenheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/holzheizung.html"
+              >Holzheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/pelletheizung.html"
+              >Pelletheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/oelheizung.html"
+              >Ölheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/gasheizung.html"
+              >Gasheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a
+              href="../../sites/heizungsartenimueberblick/blockheizkraftwerk.html"
+              >Blockheizkraftwerk</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/elektroheizung.html"
+              >Elektroheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/solaranlage.html"
+              >Solartechnik</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="navItem">
+        <a
+          href="../../sites/Energieeffizienzklassen/Energieeffizienzklassen.html"
+          >Energieeffizienzklassen</a
+        >
+      </div>
+      <div class="navItem">
+        Dämmungen
+        <div class="navItemDropdown">
+          <div class="navItem">
+            <a href="../../sites/dämmungen/Außendämmung.html">Außendämmung</a>
+          </div>
+          <div class="navItem">
+            <a href="../../sites/dämmungen/innendämmung.html">Innendämmung</a>
+          </div>
+          <div class="navItem">
+            <a href="../../sites/dämmungen/kerndämmung.html">Kerndämmung</a>
+          </div>
+        </div>
+      </div>
+      <div class="navItem">
+        <a
+          href="../../sites/Tipps_zum_Umweltschonenden_Heizen/tippszumrichtigenheizen.html"
+          >Tipps beim Heizen</a
+        >
+      </div>
+      <div class="navItem">
+        <a href="../../sites/sources/sources.html">Quellen</a>
+      </div>
+
+      <div class="navAuthor">
+        <a href="../../sites/profiles/timo_woityschyn.html">Timo Woityschyn</a>
+        <div class="navItemDropdown">
+          <div class="navItem">
+            <a href="../../sites/profiles/all_authors.html">Alle Autoren</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="top" class="SuiteBarBlocker"></div>
+    <!-- Inhalt über dem eigentlichen Text geeignet für Überschriften... -->
+    <div id="contentPlaceholderTop" class="contentPlaceholderTop">
+      <div class="contentPlaceholderSetup">
+        <div class="contentPlaceholder15">
+          <div></div>
+        </div>
+        <div class="contentPlaceholder70 headLine">
+          <div>Öleizung</div>
+        </div>
+        <div class="contentPlaceholder15"></div>
+      </div>
+    </div>
+    <!-- Inkalt in der Mitte -->
+    <div
+      id="contentPlaceholderMiddle"
+      class="contentPlaceholderSetup spacedDotts"
+    >
+      <div class="contentPlaceholder15 wrap">
+        <!-- Navigation auf einer Unterseite -->
+        <a href="#Arten">Arten</a>
+        <a href="#Brennstoffe">Brennstoffe</a>
+        <a href="#Kosten">Kosten</a>
+        <a href="#Vor-_und_Nachteile">Vor- und Nachteile</a>
+      </div>
+      <div class="contentPlaceholder45">
+        Eine Ölheizung erzeugt Wärme für Heizung und Warmwasserbereitung durch
+        die Verbrennung von Heizöl - einem flüssigen Brennstoff, der in
+        Tankanlagen vor Ort gelagert wird. Wie die Gasheizung gehört auch die
+        Ölheizung zu den meist genutzten Heiztechnologien. So versorgen
+        Ölheizungen heute etwas mehr als ein Viertel aller deutschen Wohngebäude
+        mit Wärme für Heizung und Warmwasser.
+      </div>
+
+      <div class="contentPlaceholder20 wrap">
+        <img
+          class="shadow"
+          src="https://d2h1t9243qzgjg.cloudfront.net/uploads/attachment/image/80963/untouched_heizung-oelheizung.jpg"
+        />
+        <div class="pictureUrl floatFix wrap">
+          <a
+            title="https://d2h1t9243qzgjg.cloudfront.net/uploads/attachment/image/80963/untouched_heizung-oelheizung.jpg"
+            href="https://d2h1t9243qzgjg.cloudfront.net/uploads/attachment/image/80963/untouched_heizung-oelheizung.jpg"
+            >Source:
+            https://d2h1t9243qzgjg.cloudfront.net/uploads/attachment/image/80963/untouched_heizung-oelheizung.jpg</a
+          >
+        </div>
+      </div>
+      <div class="contentPlaceholder20"></div>
+    </div>
+
+    <div id="Arten" class="spacedDotts">
+      <hr />
+    </div>
+    <div class="contentPlaceholderSetup">
+      <div class="contentPlaceholder15">
+        <div>Arten</div>
+      </div>
+      <div class="contentPlaceholder45">
+        <div>
+          Egal ob bei einer Modernisierung oder im Neubau: Das Heizen mit Öl ist
+          heute in zwei Formen möglich.
+          <br />
+          Diese sind:
+          <ul>
+            <li>die Öl-Brennwertheizung</li>
+            <li>die Öl-Solar-Hybridheizung</li>
+          </ul>
+        </div>
+      </div>
+      <div class="contentPlaceholder20">
+        <img
+          class="shadow"
+          src="https://www.gantenhammer.com/images/heiz%C3%B6l_pic_03.jpg?crc=4243884864"
+        />
+        <div class="pictureUrl floatFix wrap">
+          <a
+            title="https://www.gantenhammer.com/images/heiz%C3%B6l_pic_03.jpg?crc=4243884864"
+            href="https://www.gantenhammer.com/images/heiz%C3%B6l_pic_03.jpg?crc=4243884864"
+          >
+            Source:
+            https://www.gantenhammer.com/images/heiz%C3%B6l_pic_03.jpg?crc=4243884864</a
+          >
+        </div>
+      </div>
+      <div class="contentPlaceholder20"></div>
+    </div>
+
+    <div id="Brennstoffe" class="spacedDotts">
+      <hr />
+    </div>
+    <div class="contentPlaceholderSetup">
+      <div class="contentPlaceholder15">
+        <div>Brennstoffe</div>
+      </div>
+      <div class="contentPlaceholder65">
+        <div class="contentPlaceholderSetup">
+          <div class="contentPlaceholder15">
+            Schwefelarmes Heizöl (EL)
+          </div>
+          <div class="contentPlaceholder85">
+            Schwefelarmes Heizöl EL ist heute der Standard, wenn es um das Heizen
+            mit Öl geht. Es hat einen Marktanteil von über 99 Prozent und ist bei
+            allen Mineralstoffhändlern in Deutschland erhältlich. Es wird aus
+            fossilem Erdöl gewonnen, hat einen besonders niedrigen Schwefelanteil
+            und verbrennt nahezu rückstandslos. Durch die genormten
+            Qualitätsanforderungen ermöglicht schwefelarmes Heizöl eine
+            gleichbleibend hohe Energieausnutzung und sorgt außerdem für einen
+            geringen Aufwand bei der Wartung der Ölheizung.
+          </div>
+        </div>
+        <hr />
+        <div class="contentPlaceholderSetup">
+          <div class="contentPlaceholder15">
+            Bio-Heizöl
+          </div>
+          <div class="contentPlaceholder85">
+            Eine ökologische Alternative zum konventionellen Brennstoff ist das
+            Bio-Heizöl. Dabei handelt es sich um schwefelarmes Heizöl, dem ein
+            Anteil aus nachwachsenden Rohstoffen beigemischt wurde. Das
+            verwendete Bio-Öl wird in der Regel aus Raps-, Soja- oder
+            Sonnenblumenöl und Methanol hergestellt und hat insgesamt einen
+            Anteil von drei bis etwa zehn Prozent am Heizöl. Während der
+            alternative Brennstoff in den meisten neuen Ölheizungen ohne Weiteres
+            eingesetzt werden kann, sind bei älteren Öl-Anlagen unter Umständen
+            besondere Maßnahmen erforderlich.
+          </div>
+        </div>
+      </div>
+
+      <div class="contentPlaceholder20"></div>
+    </div>
+
+    <div id="Kosten" class="spacedDotts">
+      <hr />
+    </div>
+    <div class="contentPlaceholderSetup">
+      <div class="contentPlaceholder15">
+        <div>Kosten</div>
+      </div>
+      <div class="contentPlaceholder65">
+        <div>
+          Die Kosten einer Ölheizung setzen sich aus drei Teilen zusammen. Diese
+          sind:
+
+          <ul>
+            <li>die Ölheizung selbst</li>
+            <li>die Tankanlage zur Öllagerung</li>
+            <li>die Brennstoffkosten in Betrieb</li>
+          </ul>
+
+          <hr />
+          <div class="contentPlaceholderSetup">
+            <div class="contentPlaceholder15">
+              Die Kosten der Ölheizung selbst
+            </div>
+            <div class="contentPlaceholder85">
+              Effiziente Wärmeerzeuger zum Heizen mit Öl gibt es heute in vielen
+              verschiedenen Leistungsklassen. Für einen Brennwertkessel in einem
+              typischen Einfamilienhaus etwa müssen Hausbesitzer mit Kosten von
+              6.000 bis 8.000 Euro rechnen. Soll außerdem auch eine
+              Solarthermieanlage zur Warmwasserbereitung installiert werden,
+              kommen noch einmal rund 4.000 bis 5.000 Euro hinzu. Im Zuge des
+              Klimaschutzpaketes der Bundesregierung können Bauherren und
+              Hausbesitzer seit 01.01.2020 nicht mehr von einer staatlichen
+              Förderung für eine Ölheizung profitieren. Anträge, die vor dem
+              31.12.2019 eingereicht wurden, werden allerdings entsprechend der
+              Regelungen von 2015 behandelt.
+              <b
+                >Generell gilt: Die genannten Preise für eine Ölheizung variieren
+                stark nach Region, Hersteller und Dienstleister und stellen damit
+                nur eine grobe Kosteneinschätzung dar.
+              </b>
+            </div>
+          </div>
+          <hr />
+          <div class="contentPlaceholderSetup">
+            <div class="contentPlaceholder15">
+              Die Tankanlage zur Öllagerung
+            </div>
+            <div class="contentPlaceholder85">
+              Die Kosten der Tanks für die Ölheizung richten sich nach dem
+              energetischen Stand des Gebäudes. Ist diese besonders hoch, reicht
+              schon eine kleinere Anlage aus. Als Richtwert können
+              Einfamilienhausbesitzer hier mit 1.500 bis 2.500 Euro rechnen.
+            </div>
+          </div>
+          <hr />
+          <div class="contentPlaceholderSetup">
+            <div class="contentPlaceholder15">
+              Die Brennstoffkosten einer Öl-Heizanlage
+            </div>
+            <div class="contentPlaceholder85">
+              Die Kosten der Tanks für die Ölheizung richten sich nach dem
+              energetischen Stand des Gebäudes. Ist diese besonders hoch, reicht
+              schon eine kleinere Anlage aus. Als Richtwert können
+              Einfamilienhausbesitzer hier mit 1.500 bis 2.500 Euro rechnen.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="Vor-_und_Nachteile" class="spacedDotts">
+      <hr />
+    </div>
+    <div class="contentPlaceholderSetup">
+      <div class="contentPlaceholder15">
+        <div>Vor- und Nachteile</div>
+      </div>
+      <div class="contentPlaceholder65 center">
+        <table class="pro_con">
+          <thead class="center">
+            <tr>
+              <td>Vorteile</td>
+              <td>Nachteile</td>
+            </tr>
+          </thead>
+          <tbody class="center">
+            <tr>
+              <td>
+                geringe Heizkosten und hoher Wirkungsgrad durch Nutzung des
+                Brennwerteffekts
+              </td>
+              <td>
+                trotz der Beimischung von Bio-Heizöl verbrauchen Ölheizungen
+                überwiegend fossile Rohstoffe
+              </td>
+            </tr>
+            <tr>
+              <td>zuverlässiger Heizbetrieb durch ausgereifte Technik</td>
+              <td>für die Öllagerung wird ausreichend Platz benötigt</td>
+            </tr>
+            <tr>
+              <td>
+                nachhaltig in Kombination mit erneuerbaren Energie nwie der
+                Solarthermie
+              </td>
+              <td>
+                die Entwicklung der Ölpreise ist nicht vorhersehbar, tendiert
+                aber zu steigenden Preisen
+              </td>
+            </tr>
+            <tr>
+              <td>keine Kosten und laufende Gebühren für einen Gasanschluss</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>geringe bis keine Umbaumaßnahmen im Keller</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="contentPlaceholder20"></div>
+    </div>
+    <div class="contentPlaceholderSetup">
+      <div class="contentPlaceholder100">
+        <div class="sourceElement">
+          <a target="_tab" href="https://heizung.de/oelheizung/"
+            >https://heizung.de/oelheizung/</a
+          >
+        </div>
+      </div>
+    </div>
+    <div id="contentPlaceholderBottom" class="contentPlaceholderBottom">
+      <div class="contentPlaceholderSetup center noStyle">
+        <div class="contentPlaceholder33">
+          <div>
+            <a href="pelletheizung.html"
+              ><i class="ms-Icon ms-Icon--ChevronLeftMed" aria-hidden="true"></i>
+              Zurück
+            </a>
+          </div>
+        </div>
+        <div class="contentPlaceholder33">
+          <div>
+            <a href="#top"
+              ><i class="ms-Icon ms-Icon--ChevronUpMed" aria-hidden="true"></i>
+              Nach oben
+              <i class="ms-Icon ms-Icon--ChevronUpMed" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+        <div class="contentPlaceholder33">
+          <div>
+            <a href="gasheizung.html">
+              Weiter
+              <i class="ms-Icon ms-Icon--ChevronRightMed" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fußzeile -->
+    <div id="contentPlaceholderFooter" class="contentPlaceholderFooter">
+      <div class="noWrap">
+        <i class="ms-Icon ms-Icon--Frigid" aria-hidden="true"></i>
+      </div>
+      <div class="">Umweltschutz beim Heizen</div>
+      <div class="noWrap">2020</div>
+    </div>
+  </body>
+</html>

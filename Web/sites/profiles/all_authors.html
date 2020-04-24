@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Umweltschutz beim Heizen</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../images/favicon.png" type="image/png" />
+    <link rel="icon" href="../../images/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="../../css/form.css" />
+    <link rel="stylesheet" href="../../css/placeholders.css" />
+    <!-- Für Microsoft Fluent UI Icon -->
+    <!-- Import von speziellen Schriftarten, welche Icons beihalten -->
+    <link
+      rel="stylesheet"
+      href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css"
+    />
+    <style>
+      img.floatRight::before,
+      img.floatRight::after {
+        clear: both;
+      }
+
+      img.floatRight {
+        float: right;
+        margin-left: auto;
+      }
+
+      img.pictureSpacing.floatRight {
+        margin: 0 0 10px 10px;
+      }
+
+      img.round {
+        border-radius: 5%;
+      }
+
+      img.profilepicture {
+        --size: 269px;
+        width: var(--size);
+        height: var(--size);
+      }
+
+      img.ipiLogo {
+        --size: 300px;
+        width: var(--size);
+        height: auto;
+      }
+
+      tbody tr td:nth-child(even) {
+        border-left: rgb(0, 0, 0) dotted 2px;
+      }
+
+      tbody tr td {
+        border-bottom: rgb(0, 0, 0) dotted 2px;
+      }
+
+      tbody tr:last-of-type td {
+        border-bottom: none;
+      }
+
+      table {
+        border-collapse: collapse;
+        background-color: rgba(70, 70, 70, 0.137);
+      }
+
+      thead {
+        border-bottom: black solid 2px;
+      }
+
+      div.RightAuthor {
+        text-align: right;
+      }
+
+      a.linkToProfile {
+        text-decoration: none;
+        margin-top: 10px;
+        margin-left: 79%;
+        font-size: 30px;
+        display: flex;
+        text-shadow: rgba(124, 124, 124, 0.7) 0px 0px 20px;
+      }
+
+      a.linkToProfile > * {
+        align-self: center;
+      }
+      a.linkToProfile > pre {
+        margin: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="error DeviceWidth center">
+      <div>
+        Damit diese Seite korrekt dargestellt werden kann, ist ein Gerät mit
+        einer Mindesbreite von 500px erforderlich.<br />Fals Sie ein Mobiltelefon
+        nutzen sollten, versuchen Sie diese Website im Querformat anzusehen.
+      </div>
+    </div>
+    <!-- Menünavigation oberhalb -->
+    <div id="contentPlaceholderSuiteBar" class="navBar">
+      <div class="navLogo">
+        <a href="../../index.html"
+          ><i class="ms-Icon ms-Icon--Frigid" aria-hidden="true"></i
+        ></a>
+      </div>
+      <div class="navItem">
+        Heizungsarten im Überblick
+        <div class="navItemDropdown flowDown">
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/waermepumpe.html"
+              >Wärmepumpe</a
+            >
+          </div>
+          <div class="navItem">
+            <a
+              href="../../sites/heizungsartenimueberblick/brenstoffzellenheizung.html"
+              >Brennstoffzellenheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/holzheizung.html"
+              >Holzheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/pelletheizung.html"
+              >Pelletheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/oelheizung.html"
+              >Ölheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/gasheizung.html"
+              >Gasheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a
+              href="../../sites/heizungsartenimueberblick/blockheizkraftwerk.html"
+              >Blockheizkraftwerk</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/elektroheizung.html"
+              >Elektroheizung</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="../../sites/heizungsartenimueberblick/solaranlage.html"
+              >Solartechnik</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="navItem">
+        <a
+          href="../../sites/Energieeffizienzklassen/Energieeffizienzklassen.html"
+          >Energieeffizienzklassen</a
+        >
+      </div>
+      <div class="navItem">
+        Dämmungen
+        <div class="navItemDropdown">
+          <div class="navItem">
+            <a href="../../sites/dämmungen/Außendämmung.html">Außendämmung</a>
+          </div>
+          <div class="navItem">
+            <a href="../../sites/dämmungen/innendämmung.html">Innendämmung</a>
+          </div>
+          <div class="navItem">
+            <a href="../../sites/dämmungen/kerndämmung.html">Kerndämmung</a>
+          </div>
+        </div>
+      </div>
+      <div class="navItem">
+        <a
+          href="../../sites/Tipps_zum_Umweltschonenden_Heizen/tippszumrichtigenheizen.html"
+          >Tipps beim Heizen</a
+        >
+      </div>
+      <div class="navItem">
+        <a href="../../sites/sources/sources.html">Quellen</a>
+      </div>
+
+      <div class="navAuthor active">
+        Timo Woityschyn & David Hensel
+        <div class="navItemDropdown">
+          <div class="navItem">
+            <a href="../../sites/profiles/all_authors.html">Alle Autoren</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="top" class="SuiteBarBlocker"></div>
+    <!-- Inhalt über dem eigentlichen Text geeignet für Überschriften... -->
+    <div id="contentPlaceholderTop" class="contentPlaceholderTop">
+      <div class="contentPlaceholderSetup">
+        <div class="contentPlaceholder15">
+          <div></div>
+        </div>
+        <div class="contentPlaceholder70 headLine">
+          <div>Alle Autoren</div>
+        </div>
+        <div class="contentPlaceholder15"></div>
+      </div>
+    </div>
+    <!-- Inkalt in der Mitte -->
+    <div id="contentPlaceholderMiddle" class="contentPlaceholderSetup">
+      <div class="contentPlaceholder15 wrap">
+        <!-- Navigation auf einer Unterseite -->
+        <a href="#timo_woityschyn">Timo Woityschyn</a>
+        <a href="#david_hensel">David Hensel</a>
+      </div>
+      <div id="timo_woityschyn" class="contentPlaceholder85">
+        <div class="contentPlaceholderSetup">
+          <div class="contentPlaceholder15">
+            Timo Woityschyn
+          </div>
+          <div class="contentPlaceholder60">
+            <table>
+              <tbody>
+                <tr>
+                  <td>Name</td>
+                  <td>Timo Tobias Woityschyn</td>
+                </tr>
+                <tr>
+                  <td>Spitzname</td>
+                  <td>Woyte</td>
+                </tr>
+                <tr>
+                  <td>Geburtsdatum</td>
+                  <td>14.10.2000</td>
+                </tr>
+                <tr>
+                  <td>Wohnort</td>
+                  <td>91564 Neuendettelsau</td>
+                </tr>
+                <tr>
+                  <td>Beruf</td>
+                  <td>Azubi-Developer</td>
+                </tr>
+                <tr>
+                  <td>Programmiersprachen</td>
+                  <td>
+                    <ul>
+                      <li>C#</li>
+                      <li>C++</li>
+                      <li>HTML</li>
+                      <li>ASP.Net</li>
+                      <li>JavaScript</li>
+                      <li>TypeScript</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <img
+            class="shadow floatRight pictureSpacing round profilepicture"
+            src="../../images/timo_woityschyn_profile.jfif"
+            alt=""
+            srcset=""
+          />
+        </div>
+        <a href="./timo_woityschyn.html" class="linkToProfile">
+          <pre>zum Profil </pre>
+          <i class="ms-Icon ms-Icon--PageRight" aria-hidden="true"></i>
+        </a>
+        <div id="david_hensel" class="spacedDotts">
+          <hr />
+        </div>
+        <div class="contentPlaceholderSetup">
+          <div class="contentPlaceholder15"></div>
+          <div class="contentPlaceholder60">
+            <table>
+              <tbody>
+                <tr>
+                  <td><strong>Name</strong></td>
+                  <td>David Hensel</td>
+                </tr>
+                <tr>
+                  <td><strong>Geburtsdatum</strong></td>
+                  <td>09.03.2001</td>
+                </tr>
+                <tr>
+                  <td><strong>Adresse</strong></td>
+                  <td>91564 Neuendettelsau</td>
+                </tr>
+                <td><strong>Email Adresse</strong></td>
+                <td>d.hensel2001@googlemail.com</td>
+                <tr>
+                  <td><strong>Beruf</strong></td>
+                  <td>Azubi, <em>Frau für Alles</em></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <img
+            class="shadow floatRight pictureSpacing round profilepicture"
+            src="../../images/Hensel David_pp.jpg"
+            alt=""
+            srcset=""
+          />
+        </div>
+        <a href="./david_hensel.html" class="linkToProfile">
+          <pre>zum Profil </pre>
+          <i class="ms-Icon ms-Icon--PageRight" aria-hidden="true"></i>
+        </a>
+        <div class="spacedDotts">
+          <hr />
+        </div>
+      </div>
+    </div>
+
+    <!-- Inhalt am Ende der Seite (passend für zurück nach oben?)-->
+    <div id="contentPlaceholderBottom" class="contentPlaceholderBottom">
+      <div class="contentPlaceholderSetup center noStyle">
+        <div class="contentPlaceholder33">
+          <div></div>
+        </div>
+        <div class="contentPlaceholder33">
+          <div>
+            <a href="#top"
+              ><i class="ms-Icon ms-Icon--ChevronUpMed" aria-hidden="true"></i>
+              Nach oben
+              <i class="ms-Icon ms-Icon--ChevronUpMed" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+        <div class="contentPlaceholder33">
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <!-- Fußzeile -->
+    <div id="contentPlaceholderFooter" class="contentPlaceholderFooter">
+      <div class="noWrap">
+        <i class="ms-Icon ms-Icon--Frigid" aria-hidden="true"></i>
+      </div>
+      <div class="">Umweltschutz beim Heizen</div>
+      <div class="noWrap">2020</div>
+    </div>
+  </body>
+</html>
+<!--  -->

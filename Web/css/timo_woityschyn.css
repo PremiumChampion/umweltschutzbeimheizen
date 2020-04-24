@@ -1,0 +1,99 @@
+img.floatRight::before, img.floatRight::after {
+    clear: both;
+}
+
+img.floatRight {
+    float: right;
+    margin-left: auto;
+}
+
+img.pictureSpacing.floatRight {
+    margin: 0 0 10px 10px;
+}
+
+img.round {
+    border-radius: 5%;
+}
+
+img.profilepicture {
+    --size: 269px;
+    width: var(--size);
+    height: var(--size);
+}
+
+img.ipiLogo {
+    --size: 300px;
+    width: var(--size);
+    height: auto;
+}
+
+tbody tr td:nth-child(even) {
+    border-left: rgb(0, 0, 0) dotted 2px;
+}
+
+tbody tr td {
+    border-bottom: rgb(0, 0, 0) dotted 2px;
+}
+
+tbody tr:last-of-type td {
+    border-bottom: none;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: rgba(70, 70, 70, 0.137);
+    width: 100%;
+}
+
+thead {
+    border-bottom: black solid 2px;
+}
+
+div.RightAuthor {
+    text-align: right;
+    font-style: italic;
+}
+
+.content+input.toggle[id="expanded"]:checked {
+    max-height: auto;
+}
+
+.collapseAble input.toggle[id="shrinked"]:checked+.content {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 200px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient( black 75%, transparent 100%);
+}
+
+.collapseAble input.toggle[id="shrinked"]:checked~*+label[for="shrinked"] {
+    display: none;
+}
+
+.collapseAble input.toggle[id="shrinked"]~*+label[for="shrinked"] {
+    text-align: center;
+    display: block;
+    width: 85%;
+    text-shadow: rgba(0, 0, 0, 0.7) 0px 0px 20px;
+}
+
+.collapseAble input.toggle[id="expanded"]:checked~*+label[for="expanded"] {
+    display: none;
+}
+
+.collapseAble input.toggle[id="expanded"]~*+label[for="expanded"] {
+    text-align: center;
+    display: block;
+    width: 85%;
+    text-shadow: rgba(0, 0, 0, 0.7) 0px 0px 20px;
+}
+
+.collapseAble input.toggle {
+    display: none;
+}
+
+.collapseAble .ms-Icon {
+    font-size: 40px;
+}

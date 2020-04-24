@@ -1,0 +1,99 @@
+.contentPlaceholderSetup {
+    margin: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.contentPlaceholderSetup > *{
+    margin: 0 5px;
+    display: block;    
+}
+
+.contentPlaceholderSetup .contentPlaceholderSetup{
+    margin: 0;
+}
+
+.contentPlaceholderSetup >.contentPlaceholder5 {
+    width: 5%;
+}
+
+.contentPlaceholderSetup >.contentPlaceholder10 {
+    width: 10%;
+}
+
+.contentPlaceholderSetup >.contentPlaceholder15 {
+    width: 15%;
+}
+
+.contentPlaceholderSetup >.contentPlaceholder20 {
+    width: 20%;
+}
+
+.contentPlaceholderSetup >.contentPlaceholder25 {
+    width: 25%;
+}
+
+.contentPlaceholderSetup >.contentPlaceholder30 {
+    width: 30%;
+}
+
+.contentPlaceholderSetup >.contentPlaceholder33 {
+    width: 33%;
+}
+
+.contentPlaceholderSetup >.contentPlaceholder35 {
+    width: 35%;
+}
+
+.contentPlaceholderSetup >.contentPlaceholder40 {
+    width: 40%;
+}
+
+.contentPlaceholderSetup >.contentPlaceholder45 {
+    width: 45%;
+}
+
+.contentPlaceholderSetup >.contentPlaceholder50 {
+    width: 50%;
+}
+
+.contentPlaceholderSetup >.contentPlaceholder60 {
+    width: 60%;
+}
+
+.contentPlaceholderSetup >.contentPlaceholder65 {
+    width: 65%;
+}
+
+.contentPlaceholderSetup >.contentPlaceholder66 {
+    width: 66%;
+}
+
+.contentPlaceholderSetup >.contentPlaceholder70 {
+    width: 70%;
+}
+
+.contentPlaceholderSetup >.contentPlaceholder75 {
+    width: 75%;
+}
+
+.contentPlaceholderSetup >.contentPlaceholder80 {
+    width: 80%;
+}
+
+.contentPlaceholderSetup >.contentPlaceholder85 {
+    width: 85%;
+}
+
+.contentPlaceholderSetup >.contentPlaceholder100 {
+    width: 100%;
+}
+
+.contentPlaceholderBottom{
+    margin-bottom: 70px;
+}
+
+
+img {
+    width: 100%;
+}
